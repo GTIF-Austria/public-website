@@ -1,9 +1,9 @@
 ---
 layout: home
 hero:
-  name: Welcome to GTIF
-  text: Lorem Ipsum
-  tagline: Lorem ipsum dolor sit amet
+  name: Green Transition Information Factories
+  text: Austrian Capabilities
+  tagline: Actionable information from Earth Observation for the green re-built and adaptations to climate change
   image:
     id: logo
     alt: Logo
@@ -16,16 +16,30 @@ hero:
       link: /narratives/example
 ---
 
-# Lorem Ipsum
+# GTIF Capabilities 
 
-## Section A
+Green Transition Information Factories (GTIF) produce geospatial content from Earth Observation (EO) data, quantifying and helping to understand the complexities of transitioning our energy and mobility sectors to Carbon neutrality. They generate input for the planning of sustainable cities and deliver factual data needed in the managing of climate adaptation processes. 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae ipsum facilisis, fringilla magna eu, sodales justo. Morbi finibus lacus ex, vitae fermentum erat malesuada at. Maecenas quis diam et dui dapibus aliquet quis at urna. Nunc tincidunt, libero at elementum lobortis, sem leo cursus justo, ut laoreet mi libero nec ligula. Praesent in vulputate mi, eu porta velit. Quisque vitae condimentum lorem. Morbi maximus scelerisque feugiat. Etiam quis dolor porta, tincidunt ante consequat, porttitor orci. Suspendisse pretium est ac orci vehicula, feugiat porttitor lorem ullamcorper. Aliquam aliquet nisi in blandit gravida. Sed euismod ut odio a posuere. Praesent mi dui, rutrum malesuada eros id, eleifend pharetra urna.
+GTIF content can be called-off via machine-to-machine interfaces and integrated into decision-making  chains. GTIF also feature interactive user interfaces for information discovery, analysis and judgement using cloud computing and cutting-edge analytics.
+
+Service functions, called “GTIF Capabilities”, are grouped into the application domains “Energy Transition” , “Mobility Transition”, “Sustainable Cities”, “Carbon Accounting”, and “EO (Climate) Adaptation Services”. GTIF Capabilities are made for:
+
+* Decision-makers to assess and monitor the effectiveness of policies  and evaluate political objectives and outcomes using GTIF-provided data, indicators and interactive exploration tools.
+* Industry to develop novel solutions to foster the Green Economy, supported by space technologies, and connect to relevant national and international stakeholders within the wider GTIF ecosystem.
+* Citizens to engage and understand the needs for their actions through interactive exploration tools and captivating scientific narratives across key Green Transition domains.
+
+## Narratives
+
+This Website provides a central location to present and describe the GTIF Austria Capabilities. Currently these capabilities are described through narratives. You can see an overview of the available narratives below.
 
 <NarrativeGallery />
 
-## Section B
+All relevant GTIF Austrian activities are invited to submit a narrative for their capability. To request submission of a narrative covering the capability of your activity please go to the login area.
 
-Aenean nec metus convallis, convallis turpis a, iaculis risus. Donec eu mauris purus. Quisque vel ante pellentesque, laoreet turpis in, laoreet leo. Etiam convallis faucibus metus, quis condimentum lorem tempus non. Morbi urna purus, interdum vel lectus a, ullamcorper imperdiet nisl. Donec ut lectus metus. Vestibulum maximus aliquet purus, pellentesque fermentum leo sagittis at. Suspendisse convallis ultrices massa, eget posuere risus iaculis id. Sed dictum nisi rhoncus, bibendum sem id, hendrerit neque. Cras fringilla, nisl a hendrerit sagittis, purus felis condimentum turpis, vitae pretium urna est in nunc. Vestibulum elementum non est id feugiat. Cras ultrices lacus a sem tempor, non scelerisque metus aliquet.
+## Contributions with Austrian Footing
 
-![placeholder image](https://placehold.co/1000x500)
+The Capabilities accessible on this Website are of Austrian provenance or with a geographical coverage of Austrian territories. Mostly, they have been developed and coordinated under the Digital Twin Austria GTIF programme. Some are contributions to international GTIF programmes organized via projects of the European Space Agency.
+
+## Public and Commercial GTIF
+
+Information about the suppliers behind each of the Capabilities is presented on this Website as well. In many of the shown cases the information made public on this Website is only a specimen of what a given Capability can supply under commercial plans. Users interested in the complete service scope and data coverages are invited to contact the respective supplier directly for further information about business arrangements.
