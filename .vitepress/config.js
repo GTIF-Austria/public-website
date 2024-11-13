@@ -1,10 +1,13 @@
 import { defineConfig } from "vitepress";
 // Import config from centralized repo
-import { config } from "https://hub-brands.eox.at/gtif/config.mjs";
+import { config } from "https://hub-brands.eox.at/gtif-austria/config.mjs";
 
 export default defineConfig({
   appearance: false,
   lastUpdated: true,
+  sitemap: {
+    hostname: "https://gtif-austria.info",
+  },
   themeConfig: {
     siteTitle: config.meta.title,
     primaryColor: config.theme.primary_color,
@@ -42,9 +45,6 @@ export default defineConfig({
   title: config.meta.title,
   description: config.meta.description,
   head: [["link", { rel: "icon", href: config.meta.favicon }]],
-  vite: {
-    publicDir: "../narratives",
-  },
   vue: {
     template: {
       compilerOptions: {

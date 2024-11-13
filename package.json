@@ -4,8 +4,9 @@
   "description": "Public website of GTIF-Austria",
   "type": "module",
   "scripts": {
+    "clone_narratives": "git clone https://github.com/GTIF-Austria/public-narratives.git narratives",
     "dev": "NODE_OPTIONS='--experimental-network-imports=node' vitepress dev",
-    "build": "NODE_OPTIONS='--experimental-network-imports=node' vitepress build",
+    "build": "npm run clone_narratives && NODE_OPTIONS='--experimental-network-imports=node' vitepress build",
     "serve": "NODE_OPTIONS='--experimental-network-imports=node' vitepress serve",
     "format": "npx prettier --write ."
   },

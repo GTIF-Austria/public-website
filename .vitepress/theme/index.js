@@ -12,7 +12,11 @@ export default {
     app.component("NarrativeGallery", NarrativeGallery);
 
     router.onBeforePageLoad = async (to) => {
-      if (to.includes("/narratives/") && to !== "/narratives/") {
+      if (
+        to.includes("/narratives/") &&
+        to !== "/narratives/" &&
+        to !== "/narratives/README.html"
+      ) {
         router.route.data = {
           content: narratives.find((n) => n.url === to).src,
           frontmatter: {
