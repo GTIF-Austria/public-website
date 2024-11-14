@@ -8,3 +8,10 @@ const { page } = useData();
     <eox-storytelling .markdown="page.content"></eox-storytelling>
   </ClientOnly>
 </template>
+
+<style>
+eox-storytelling {
+  --header-font-family: Poppins, sans-serif;
+  --body-font-family: Poppins, sans-serif;
+}
+</style>

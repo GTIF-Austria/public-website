@@ -1,18 +1,24 @@
 <script setup>
 import { data as narratives } from "../narratives.data.js";
+
+const narrativesExcerpts = narratives.map((n) => {
+  const el = document.createElement("html");
+  el.innerHTML = n.html;
+  return (
+    el.querySelector("h1")?.textContent ||
+    n.url.replace("/narratives/", "").replace(".html", "")
+  );
+});
 </script>
 
 <template>
   <div class="gallery">
-    <a v-for="narrative in narratives" class="narrative" :href="narrative.url">
-      <p
-        v-html="
-          narrative.src.substring(
-            narrative.src.indexOf('#') + 2,
-            Math.max(narrative.src.indexOf('\n'), 150),
-          )
-        "
-      ></p>
+    <a
+      v-for="(narrative, index) in narratives"
+      class="narrative"
+      :href="narrative.url"
+    >
+      <p>{{ narrativesExcerpts[index] }}</p>
     </a>
   </div>
 </template>
