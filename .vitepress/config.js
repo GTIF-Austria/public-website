@@ -9,12 +9,14 @@ export default defineConfig({
     hostname: "https://gtif-austria.info",
   },
   themeConfig: {
-    siteTitle: config.meta.title,
+    siteTitle: false,
     primaryColor: config.theme.primary_color,
     logo: config.logo,
+    externalLinkIcon: true,
     nav: [
       { text: "Home", link: "/" },
       { text: "Narratives", link: "/narratives", activeMatch: "/narratives/" },
+      { text: "Dashboard", link: "https://dashboard.gtif-austria.info" },
     ],
     footer: {
       message: `Powered by <img src="https://cockpit.hub.eox.at/storage/uploads/eoxhub/eoxhub_icon.svg" style="display: inline; height: 20px; transform: translateY(5px)" />`,

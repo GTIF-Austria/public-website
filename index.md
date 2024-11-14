@@ -9,11 +9,11 @@ hero:
     alt: Logo
   actions:
     - theme: brand
+      text: Add narrative via GTIF-Austria Dashboard
+      link: https://dashboard.gtif-austria.info
+    - theme: alt
       text: Narratives Gallery
       link: /narratives
-    - theme: alt
-      text: View example narrative
-      link: /narratives/example
 ---
 
 # GTIF Capabilities 
@@ -34,7 +34,7 @@ This Website provides a central location to present and describe the GTIF Austri
 
 <NarrativeGallery />
 
-All relevant GTIF Austrian activities are invited to submit a narrative for their capability. To request submission of a narrative covering the capability of your activity please go to the login area.
+All relevant GTIF Austrian activities are invited to submit a narrative for their capability. To request submission of a narrative covering the capability of your activity please go to the [GTIF-Austria Dashboard](https://dashboard.gtif-austria.info).
 
 ## Contributions with Austrian Footing
 
