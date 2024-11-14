@@ -1,4 +1,17 @@
+@import "/fonts/poppins/poppins.css";
+
 body {
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
+  font-family: Poppins, sans-serif;
+}
+
+@media (min-width: 960px) {
+  .main h1.name,
+  .main p.text {
+    font-size: 52px;
+  }
+  .main p.tagline {
+    font-size: 21px;
+  }
 }
