@@ -5,7 +5,7 @@ export default createContentLoader("narratives/*.md", {
   render: true,
   transform(rawData) {
     return rawData.filter(
-      (d) => d.url !== "/narratives/" && d.url !== "/narratives/README.html",
+      (d) => d.url !== "/narratives/" && d.url !== "/narratives/README",
     );
   },
 });

@@ -15,7 +15,7 @@ export default {
       if (
         to.includes("/narratives/") &&
         to !== "/narratives/" &&
-        to !== "/narratives/README.html"
+        to !== "/narratives/README"
       ) {
         router.route.data = {
           content: narratives.find((n) => n.url === to).src,
@@ -26,6 +26,12 @@ export default {
         return false;
       }
       return true;
+    };
+
+    router.onAfterRouteChanged = () => {
+      if (window) {
+        window.scrollTo(0, 0);
+      }
     };
 
     if (!import.meta.env.SSR) {
