@@ -17,7 +17,7 @@ export default defineConfig({
     nav: [
       { text: "Home", link: "/" },
       { text: "Narratives", link: "/narratives", activeMatch: "/narratives/" },
-      { text: "Dashboard", link: "https://dashboard.gtif-austria.info" },
+      { text: "Log in", link: "https://dashboard.gtif-austria.info" },
     ],
     footer: {
       message: `Powered by <img src="https://cockpit.hub.eox.at/storage/uploads/eoxhub/eoxhub_icon.svg" style="display: inline; height: 20px; transform: translateY(5px)" />`,

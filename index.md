@@ -9,7 +9,7 @@ hero:
     alt: Logo
   actions:
     - theme: brand
-      text: Add narrative via GTIF-Austria Dashboard
+      text: GTIF-Austria Narrative Editor
       link: https://dashboard.gtif-austria.info
     - theme: alt
       text: Narratives Gallery
@@ -18,7 +18,7 @@ hero:
 
 # GTIF Capabilities 
 
-Green Transition Information Factories (GTIF) produce geospatial content from Earth Observation (EO) data, quantifying and helping to understand the complexities of transitioning our energy and mobility sectors to Carbon neutrality. They generate input for the planning of sustainable cities and deliver factual data needed in the managing of climate adaptation processes. 
+Green Transition Information Factories (GTIF) produce geospatial content from Earth Observation (EO) data, quantifying and helping to understand the complexities of transitioning our energy and mobility sectors to Carbon neutrality. They generate input for the planning of sustainable cities and deliver factual data needed in the managing of climate change adaptation processes. 
 
 GTIF content can be called-off via machine-to-machine interfaces and integrated into decision-making  chains. GTIF also feature interactive user interfaces for information discovery, analysis and judgement using cloud computing and cutting-edge analytics.
 
@@ -30,11 +30,11 @@ Service functions, called “GTIF Capabilities”, are grouped into the applicat
 
 ## Narratives
 
-This Website provides a central location to present and describe the GTIF Austria Capabilities. Currently these capabilities are described through narratives. You can see an overview of the available narratives below.
+This Website provides a central location to present and describe the GTIF Austria Capabilities. Currently these Capabilities are described through narratives. You can see an overview of the available narratives below.
 
 <NarrativeGallery />
 
-All relevant GTIF Austrian activities are invited to submit a narrative for their capability. To request submission of a narrative covering the capability of your activity please go to the [GTIF-Austria Dashboard](https://dashboard.gtif-austria.info).
+All relevant GTIF Austrian activities are invited to submit a narrative for their capability. To request submission of a narrative covering the capability of your activity please go to the [GTIF-Austria Narrative Editor](https://dashboard.gtif-austria.info).
 
 ## Contributions with Austrian Footing
 
