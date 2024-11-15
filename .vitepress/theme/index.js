@@ -29,7 +29,7 @@ export default {
     };
 
     router.onAfterRouteChanged = () => {
-      if (window) {
+      if (!import.meta.env.SSR) {
         window.scrollTo(0, 0);
       }
     };
