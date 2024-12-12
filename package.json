@@ -19,6 +19,6 @@
   },
   "dependencies": {
     "@eox/map": "^1.17.0",
-    "@eox/storytelling": "^1.4.1"
+    "@eox/storytelling": "^1.4.2"
   }
 }
