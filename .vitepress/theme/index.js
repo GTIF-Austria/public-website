@@ -18,7 +18,7 @@ export default {
         to !== "/narratives/README"
       ) {
         router.route.data = {
-          content: narratives.find((n) => n.url === to).src,
+          content: narratives.find((n) => to.startsWith(n.url)).src,
           frontmatter: {
             layout: "narrative",
           },
