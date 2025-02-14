@@ -51,6 +51,7 @@ export default {
           widget: {
             name: "EodashTools",
             properties: {
+              indicatorBtnText: 'Select dataset',
               layoutTarget: "expert",
               layoutIcon: 'M2,5V19H8V5H2M9,5V10H15V5H9M16,5V14H22V5H16M9,11V19H15V11H9M16,15V19H22V15H16Z',
               itemFilterConfig: {
@@ -174,6 +175,7 @@ export default {
           widget: {
             name: "EodashTools",
             properties: {
+              indicatorBtnText: 'Select dataset',
               layoutTarget: "light",
               layoutIcon: 'M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z',
               itemFilterConfig: {
