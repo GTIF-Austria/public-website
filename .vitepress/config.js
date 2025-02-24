@@ -4,7 +4,7 @@ import { config } from "https://hub-brands.eox.at/gtif-austria/config.mjs";
 
 export default defineConfig({
   appearance: false,
-  lastUpdated: true,
+  // lastUpdated: true,
   cleanUrls: true,
   sitemap: {
     hostname: "https://gtif-austria.info",
