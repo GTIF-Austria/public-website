@@ -1,10 +1,10 @@
 
 export default {
-  id: "demo",
-  stacEndpoint: 'https://gtif-cerulean.github.io/cerulean-catalog/cerulean/catalog.json',
+  id: "GTIF-Austria Dashboard",
+  stacEndpoint: 'https://gtif-austria.github.io/public-catalog/GTIF-Austria/catalog.json',
   brand: {
     noLayout: true,
-    name: "Demo",
+    name: "GTIF-Austria Dashboard",
     theme: {
       colors: {
         primary: "#fff",
@@ -12,7 +12,7 @@ export default {
         surface: "#fff",
       },
     },
-    footerText: "Demo configuration of eodash client",
+    footerText: "GTIF-Austria Dashboard",
   },
   templates: {
     light: {
@@ -39,6 +39,7 @@ export default {
           name: "EodashMap",
           properties: {
             enableCompare: true,
+            zoom: 8,
           },
         },
       },
@@ -73,7 +74,7 @@ export default {
               id: "layercontrol-light",
               type: "internal",
               title: "Layers",
-              layout: { x: 0, y: 1, w: 3, h: 6 },
+              layout: { x: 0, y: 1, w: 3, h: 9 },
               widget: {
                 name: "EodashLayerControl",
                 properties: {
@@ -124,19 +125,33 @@ export default {
             ? {
               id: "Datepicker",
               type: "internal",
-              layout: { x: 5, y: 11, w: 2, h: 1 },
+              layout: { x: 5, y: 10, w: 2, h: 1 },
               title: "Date",
               widget: {
                 name: "EodashDatePicker",
                 properties: {
                   hintText: `<b>Hint:</b> closest available date is displayed <br />
                               on map (see Analysis Layers)`,
+                  toggleCalendar: true,
                 },
-                toggleCalendar: true,
               },
             }
             : null;
           },
+        },
+        {
+          defineWidget: (selectedSTAC) =>
+            selectedSTAC?.links.some((l) => l.rel === "service")
+          ? {
+            id: "Processes",
+            type: "internal",
+            title: "Processes",
+            layout: { x: 9, y: 6, w: 3, h: 5 },
+            widget: {
+              name: "EodashProcess",
+            },
+          }
+          : null,
         },
       ],
     },
@@ -224,7 +239,7 @@ export default {
             ? {
               id: "Datepicker",
               type: "internal",
-              layout: { x: 5, y: 11, w: 2, h: 1 },
+              layout: { x: 5, y: 10, w: 2, h: 1 },
               title: "Date",
               widget: {
                 name: "EodashDatePicker",
@@ -260,7 +275,7 @@ export default {
             id: "Processes",
             type: "internal",
             title: "Processes",
-            layout: { x: 9, y: 7, w: 3, h: 5 },
+            layout: { x: 9, y: 6, w: 3, h: 5 },
             widget: {
               name: "EodashProcess",
             },

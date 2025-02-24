@@ -4,7 +4,6 @@
   "description": "Public website of GTIF-Austria",
   "type": "module",
   "scripts": {
-    "start": "eodash build --lib && vitepress dev",
     "docs:dev": "vitepress dev",
     "clone_narratives": "git clone https://github.com/GTIF-Austria/public-narratives.git narratives",
     "dev": "NODE_OPTIONS='--experimental-network-imports=node' vitepress dev",
@@ -19,7 +18,7 @@
     "@eox/pages-theme-eox": "^0.1.1"
   },
   "dependencies": {
-    "@eodash/eodash": "5.0.0-rc.2.1",
+    "@eodash/eodash": "5.0.0-rc.2.3",
     "@eox/chart": "^0.3.1",
     "@eox/drawtools": "^0.13.3",
     "@eox/jsonform": "0.12.2",
