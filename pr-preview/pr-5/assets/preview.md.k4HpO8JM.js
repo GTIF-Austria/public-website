@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as r}from"./chunks/framework.B_ddJVe4.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{"layout":"narrative"},"headers":[],"relativePath":"preview.md","filePath":"preview.md"}'),a={name:"preview.md"};function o(n,s,c,i,p,_){return r(),t("div")}const f=e(a,[["render",o]]);export{m as __pageData,f as default};
