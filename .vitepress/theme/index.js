@@ -10,7 +10,11 @@ export default {
   async enhanceApp({ app, siteData, router }) {
     app.component("narrative", Narrative);
     app.component("NarrativeGallery", NarrativeGallery);
-
+    if (!import.meta.env.SSR) {
+      await import('@eodash/eodash/webcomponent')
+      await import('@eodash/eodash/webcomponent.css') 
+      await import("@eox/stacinfo")
+    }
     router.onBeforePageLoad = async (to) => {
       if (
         to.includes("/narratives/") &&
@@ -62,8 +66,7 @@ export default {
         "@eox/storytelling/dist/eox-storytelling"
       );
       app.use(storytelling);
-      const map = await import("@eox/map/dist/eox-map");
-      app.use(map);
+
       const mapAdvanced = await import(
         "@eox/map/dist/eox-map-advanced-layers-and-sources"
       );
