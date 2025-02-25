@@ -39,7 +39,8 @@ export default {
           name: "EodashMap",
           properties: {
             enableCompare: true,
-            zoom: 8,
+            center: [13.3587, 47.4706],
+            zoom: 7,
           },
         },
       },
