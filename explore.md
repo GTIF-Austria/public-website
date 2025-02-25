@@ -7,6 +7,9 @@ footer: false
         display: unset;
         height:9px;
     }
+    eo-dash .eodash-overlay {
+        bottom: -13px;
+    }
 </style>
 
 <script setup>
