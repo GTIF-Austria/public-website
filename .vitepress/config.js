@@ -17,6 +17,7 @@ export default defineConfig({
     nav: [
       { text: "Home", link: "/" },
       { text: "Narratives", link: "/narratives", activeMatch: "/narratives/" },
+      { text: 'Explore data', link: '/explore/' },
       { text: "Log in", link: "https://dashboard.gtif-austria.info" },
     ],
     footer: {
@@ -51,9 +52,7 @@ export default defineConfig({
   vue: {
     template: {
       compilerOptions: {
-        isCustomElement: (tag) => {
-          return tag.toLowerCase().includes("-");
-        },
+        isCustomElement: (el) => el.includes('-')
       },
     },
   },
