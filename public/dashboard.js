@@ -33,7 +33,7 @@ export default {
         },
       },
       background: {
-        id: Symbol(),
+        id: "background-map",
         type: "internal",
         widget: {
           name: "EodashMap",
@@ -173,7 +173,7 @@ export default {
         },
       },
       background: {
-        id: Symbol(),
+        id: "background-map",
         type: "internal",
         widget: {
           name: "EodashMap",
@@ -303,7 +303,7 @@ export default {
         },
       },
       background: {
-        id: Symbol(),
+        id: "background-map",
         type: "internal",
         widget: {
           name: "EodashMap",
