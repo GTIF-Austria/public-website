@@ -7,8 +7,8 @@ footer: false
         display: unset;
         height:9px;
     }
-    eo-dash .eodash-overlay {
-        bottom: -13px;
+    eo-dash .eodash-overlay p{
+        bottom: -13px!important;
     }
 </style>
 

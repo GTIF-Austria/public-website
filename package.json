@@ -19,9 +19,9 @@
   },
   "dependencies": {
     "@eodash/eodash": "5.0.0-rc.2.4",
-    "@eox/storytelling": "^1.5.0",
+    "@eox/storytelling": "^1.5.2",
     "mustache": "^4.2.0",
-    "vitepress": "^1.5.0",
+    "vitepress": "^1.6.3",
     "vue": "^3.4.21"
   }
 }
