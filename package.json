@@ -18,7 +18,7 @@
     "@eox/pages-theme-eox": "^0.1.1"
   },
   "dependencies": {
-    "@eodash/eodash": "5.0.0-rc.2.4",
+    "@eodash/eodash": "5.0.0-rc.2.5",
     "@eox/storytelling": "^1.5.2",
     "mustache": "^4.2.0",
     "vitepress": "^1.6.3",
