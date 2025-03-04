@@ -13,4 +13,4 @@ import{d as g,c,r as d,n as A,o as i,a as D,t as $,b,w as m,T as ue,e as f,_ as 
         --vp-c-brand-3: color-mix(in srgb, ${n} 80%, white);
         --vp-c-brand-soft: color-mix(in srgb, ${n} 16%, transparent);
       }
-    `)),document.head.appendChild(a),document.body.style.opacity=1;const s=await Z(()=>import("./eox-storytelling.CfaWFUZ3.js"),[]);o.use(s);const l=await Z(()=>import("./eox-map-advanced-layers-and-sources.Ng07MgA2.js").then(h=>h.e),__vite__mapDeps([7,1]));o.use(l)}}};export{Di as R};
+    `)),document.head.appendChild(a),document.body.style.opacity=1;const s=await Z(()=>import("./eox-storytelling.DHNqmkJk.js"),[]);o.use(s);const l=await Z(()=>import("./eox-map-advanced-layers-and-sources.Ng07MgA2.js").then(h=>h.e),__vite__mapDeps([7,1]));o.use(l)}}};export{Di as R};
