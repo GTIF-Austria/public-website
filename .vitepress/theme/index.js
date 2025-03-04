@@ -1,12 +1,14 @@
 import DefaultTheme from "vitepress/theme";
 import Narrative from "./Narrative.vue";
 import NarrativeGallery from "../components/NarrativeGallery.vue";
+import Layout from "./Layout.vue";
 import { data as narratives } from "../narratives.data.js";
 import "./custom.css";
 
 /** @type {import('vitepress').Theme} */
 export default {
   extends: DefaultTheme,
+  Layout,
   async enhanceApp({ app, siteData, router }) {
     app.component("narrative", Narrative);
     app.component("NarrativeGallery", NarrativeGallery);
