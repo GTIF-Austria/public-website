@@ -5,8 +5,9 @@ import Disclaimer from "../components/Disclaimer.vue";
 
 <template>
   <Layout>
-    <template #layout-top>
+    <template #layout-bottom>
       <Disclaimer></Disclaimer>
+      <div style="height: 45px"></div>
     </template>
   </Layout>
 </template>

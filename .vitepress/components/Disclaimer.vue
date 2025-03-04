@@ -1,14 +1,5 @@
 <template>
-  <div
-    class="disclaimer"
-    :class="
-      windowTop > 500
-        ? 'is-sticky'
-        : windowTop > 400
-          ? 'is-gone'
-          : 'is-absolute'
-    "
-  >
+  <div class="disclaimer">
     <p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
         <title>progress-wrench</title>
@@ -21,52 +12,22 @@
   </div>
 </template>
 
-<script>
-export default {
-  data: () => ({
-    windowTop: 0,
-  }),
-  mounted() {
-    window.addEventListener("scroll", this.onScroll);
-  },
-  beforeDestroy() {
-    window.removeEventListener("scroll", this.onScroll);
-  },
-  methods: {
-    onScroll(e) {
-      this.windowTop = window.top.scrollY;
-    },
-  },
-};
-</script>
-
 <style scoped>
 .disclaimer {
+  position: fixed;
+  top: calc(100svh - 45px);
   text-align: center;
   z-index: 999999;
-  background: var(--vp-c-brand-1);
+  background: #00ae9daa;
   color: var(--vp-c-white);
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   border-radius: 2px;
   width: 100%;
   display: inline-block;
   transition: all 0.25s ease;
   backdrop-filter: blur(5px);
   pointer-events: none;
-}
-.disclaimer.is-sticky {
-  position: sticky;
-  top: 0;
-  margin: 0;
-}
-.disclaimer.is-absolute {
-  margin: 0 1.5rem;
-  width: calc(100% - 3rem);
-  position: absolute;
-  transform: translateY(0);
-  top: calc(2.7 * var(--vp-nav-height) + var(--vp-layout-top-height));
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
-  opacity: 0;
 }
 .home .disclaimer {
   opacity: 1;
@@ -84,24 +45,5 @@ svg {
   display: inline;
   margin-bottom: -8px;
   fill: var(--vp-c-white);
-}
-@media (min-width: 720px) {
-  .disclaimer.is-absolute {
-    top: var(--vp-nav-height);
-    margin: 0 4rem;
-    width: calc(100% - 8rem);
-    opacity: 1;
-  }
-  .disclaimer.is-sticky {
-    width: 100%;
-    opacity: 1;
-    transform: translateY(var(--vp-nav-height));
-  }
-}
-@media (min-width: calc(1400px + 2rem)) {
-  .disclaimer.is-absolute {
-    max-width: calc(1400px - 2rem);
-    margin: 0 calc((100% - 1400px) / 2);
-  }
 }
 </style>
