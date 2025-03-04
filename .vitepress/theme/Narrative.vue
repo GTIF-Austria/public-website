@@ -30,7 +30,7 @@ eox-storytelling {
   margin: -47px 0 var(--vp-nav-height) 0;
   transform: translateY(47px);
 }
-@media (min-width:960px) {
+@media (min-width: 960px) {
   eox-storytelling {
     margin: calc(var(--vp-nav-height) * -1) 0 var(--vp-nav-height) 0;
     transform: translateY(var(--vp-nav-height));

@@ -18,6 +18,11 @@ const narrativesExcerpts = narratives.map((n) => {
       class="narrative"
       :href="narrative.url"
     >
+      <img
+        v-if="narrative?.frontmatter?.['cover-image']"
+        :src="narrative.frontmatter['cover-image']"
+        clas="background"
+      />
       <p>{{ narrativesExcerpts[index] }}</p>
     </a>
   </div>
@@ -44,15 +49,27 @@ const narrativesExcerpts = narratives.map((n) => {
   margin: 64px 0;
 }
 .narrative {
-  padding: 8px 16px;
   border-radius: 8px;
   border: 1px solid var(--vp-c-brand);
   text-decoration: none;
   text-align: center;
   transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .narrative:hover {
   background: var(--vp-c-brand);
   color: white;
+}
+img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+p {
+  padding: 8px 16px;
 }
 </style>
