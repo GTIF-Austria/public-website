@@ -10,7 +10,7 @@ hero:
   actions:
     - theme: brand
       text: GTIF-Austria Narrative Editor
-      link: https://dashboard.gtif-austria.info
+      link: https://dashboard.gtif-austria.gtif.eox.at
     - theme: alt
       text: Narratives Gallery
       link: /narratives
@@ -34,7 +34,7 @@ This Website provides a central location to present and describe the GTIF Austri
 
 <NarrativeGallery />
 
-All relevant GTIF Austrian activities are invited to submit a narrative for their capability. To request submission of a narrative covering the capability of your activity please go to the [GTIF-Austria Narrative Editor](https://dashboard.gtif-austria.info).
+All relevant GTIF Austrian activities are invited to submit a narrative for their capability. To request submission of a narrative covering the capability of your activity please go to the [GTIF-Austria Narrative Editor](https://dashboard.gtif-austria.gtif.eox.at).
 
 ## Contributions with Austrian Footing
 
