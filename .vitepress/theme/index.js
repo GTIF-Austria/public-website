@@ -13,9 +13,9 @@ export default {
     app.component("narrative", Narrative);
     app.component("NarrativeGallery", NarrativeGallery);
     if (!import.meta.env.SSR) {
-      await import('@eodash/eodash/webcomponent')
-      await import('@eodash/eodash/webcomponent.css') 
-      await import("@eox/stacinfo")
+      await import("@eodash/eodash/webcomponent");
+      await import("@eodash/eodash/webcomponent.css");
+      await import("@eox/stacinfo");
     }
     router.onBeforePageLoad = async (to) => {
       if (
