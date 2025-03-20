@@ -2,12 +2,14 @@
 import { data as narratives } from "../narratives.data.js";
 
 const narrativesExcerpts = narratives.map((n) => {
-  const el = document.createElement("html");
-  el.innerHTML = n.html;
-  return (
-    el.querySelector("h1")?.textContent ||
-    n.url.replace("/narratives/", "").replace(".html", "")
-  );
+  if (!import.meta.env.SSR) {
+    const el = document.createElement("html");
+    el.innerHTML = n.html;
+    return (
+      el.querySelector("h1")?.textContent ||
+      n.url.replace("/narratives/", "").replace(".html", "")
+    );
+  }
 });
 </script>
 
