@@ -16,6 +16,7 @@ export default {
       await import("@eodash/eodash/webcomponent");
       await import("@eodash/eodash/webcomponent.css");
       await import("@eox/stacinfo");
+      await import("@eox/map");
     }
     router.onBeforePageLoad = async (to) => {
       if (
