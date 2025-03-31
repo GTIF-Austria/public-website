@@ -1,4 +1,4 @@
-import"./main.DLDzFRqc.js";import{Q as t}from"./eo-dash.CCBfNjz6.js";import{c as r,o,j as a,k as i}from"./framework.Ckmccr7c.js";import"./lit-element.Deg-YTNa.js";import"./directive.qnhzJN6s.js";import"./commonjsHelpers.BosuxZz1.js";import"./map.ZocK5lBO.js";const l={class:"flex-grow-1 fill-height overflow-auto"},n=[".for",".allowHtml",".body",".featured",".footer",".styleOverride",".header",".subheader",".tags"],g={__name:"EodashStacInfo",props:{allowHtml:{type:Boolean,default:!0},styleOverride:{type:String,default:`
+import"./main.DLDzFRqc.js";import{aS as t}from"./eo-dash.jX3ML34e.js";import{c as r,o,j as a,k as i}from"./framework.Ckmccr7c.js";import"./lit-element.Deg-YTNa.js";import"./directive.qnhzJN6s.js";import"./commonjsHelpers.BosuxZz1.js";import"./map.ZocK5lBO.js";const l={class:"flex-grow-1 fill-height overflow-auto"},n=[".for",".allowHtml",".body",".featured",".footer",".styleOverride",".header",".subheader",".tags"],g={__name:"EodashStacInfo",props:{allowHtml:{type:Boolean,default:!0},styleOverride:{type:String,default:`
 .single-property {columns: 1!important;}
 h1 {margin:0px!important;font-size:16px!important;}
 header h1:after {
