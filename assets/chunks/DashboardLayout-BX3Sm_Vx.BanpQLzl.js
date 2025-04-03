@@ -1,4 +1,4 @@
-import{b as r,o as a,w as u,j as f,N as d,k as o,c as i,e as h,aA as m,H as y,K as g,F as x,B as b,T as _}from"./framework.Ckmccr7c.js";import{x as v,aV as w}from"./eo-dash.jX3ML34e.js";import{V as k}from"./VMain-eZDKIfmJ.CoQbS-R3.js";import"./commonjsHelpers.BosuxZz1.js";import"./ssrBoot-BP7SYRyC.qWNqbVWL.js";class A extends HTMLElement{static get observedAttributes(){return["gap"]}constructor(){super(),this.attachShadow({mode:"open"}),this.render()}render(){this.shadowRoot.innerHTML=`
+import{b as r,o as a,w as u,j as f,N as d,k as o,c as i,e as h,aA as m,H as y,K as g,F as x,B as b,T as _}from"./framework.Ckmccr7c.js";import{x as v,aV as w}from"./eo-dash.BkLWu1T_.js";import{V as k}from"./VMain-eZDKIfmJ.kmsbfwQ3.js";import"./commonjsHelpers.BosuxZz1.js";import"./ssrBoot-BP7SYRyC.qWNqbVWL.js";class A extends HTMLElement{static get observedAttributes(){return["gap"]}constructor(){super(),this.attachShadow({mode:"open"}),this.render()}render(){this.shadowRoot.innerHTML=`
     <style>
       :host {
         display: grid;
