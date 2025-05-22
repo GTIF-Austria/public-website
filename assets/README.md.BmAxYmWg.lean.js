@@ -1,1 +1,0 @@
-import{_ as a,c as t,o as s,af as n}from"./chunks/framework.Ckmccr7c.js";const _=JSON.parse('{"title":"public-website","description":"","frontmatter":{},"headers":[],"relativePath":"README.md","filePath":"README.md"}'),i={name:"README.md"};function p(l,e,r,o,c,d){return s(),t("div",null,e[0]||(e[0]=[n("",4)]))}const b=a(i,[["render",p]]);export{_ as __pageData,b as default};
