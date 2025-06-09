@@ -18,7 +18,7 @@
     "@eox/pages-theme-eox": "^0.1.1"
   },
   "dependencies": {
-    "@eodash/eodash": "https://pkg.pr.new/eodash/eodash/@eodash/eodash@197",
+    "@eodash/eodash": "https://pkg.pr.new/eodash/eodash/@eodash/eodash@ad58c80",
     "@eox/map": "^1.20.0",
     "@eox/storytelling": "^1.7.1",
     "mustache": "^4.2.0",
