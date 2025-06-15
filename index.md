@@ -8,11 +8,11 @@ hero:
     id: logo
     alt: Logo
   actions:
-    - theme: brand
-      text: GTIF-Austria Narrative Editor
-      link: https://dashboard.gtif-austria.gtif.eox.at
     - theme: alt
       text: Narratives Gallery
+      link: /narratives
+    - theme: alt
+      text: Explore Data
       link: /narratives
 ---
 
