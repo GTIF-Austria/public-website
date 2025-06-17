@@ -9,11 +9,11 @@ hero:
     alt: Logo
   actions:
     - theme: brand
-      text: GTIF-Austria Narrative Editor
-      link: https://dashboard.gtif-austria.gtif.eox.at
-    - theme: alt
       text: Narratives Gallery
       link: /narratives
+    - theme: alt
+      text: Explore Data
+      link: /explore
 ---
 
 # GTIF Capabilities 
@@ -30,16 +30,30 @@ Service functions, called “GTIF Capabilities”, are grouped into the applicat
 
 ## Narratives
 
-This Website provides a central location to present and describe the GTIF Austria Capabilities. Currently these Capabilities are described through narratives. You can see an overview of the available narratives below.
+This Website provides a central location to present and describe the GTIF Austria Capabilities. The [currently available narratives](https://gtif-austria.info/narratives) are shown below.
 
 <NarrativeGallery />
 
-All relevant GTIF Austrian activities are invited to submit a narrative for their capability. To request submission of a narrative covering the capability of your activity please go to the [GTIF-Austria Narrative Editor](https://dashboard.gtif-austria.gtif.eox.at).
+
+## Data Exploration
+
+This Website also gives access to interactive graphical user interfaces (WebGUIs) for [exploration of the actual data and services](https://gtif-austria.info/explore) provided by the Capabilities.
 
 ## Contributions with Austrian Footing
 
 The Capabilities accessible on this Website are of Austrian provenance or with a geographical coverage of Austrian territories. Mostly, they have been developed and coordinated under the Digital Twin Austria GTIF programme. Some are contributions to international GTIF programmes organized via projects of the European Space Agency.
 
+All relevant GTIF Austria initiatives are invited to contribute their Capabilities using the tools available in the [GTIF-Austria Workspace](https://dashboard.gtif-austria.gtif.eox.at). Presently, the Workspace includes the Data Editor and Narrative Editor applications.
+
 ## Public and Commercial GTIF
 
 Information about the suppliers behind each of the Capabilities is presented on this Website as well. In many of the shown cases the information made public on this Website is only a specimen of what a given Capability can supply under commercial plans. Users interested in the complete service scope and data coverages are invited to contact the respective supplier directly for further information about business arrangements.
+
+## Links to International GTIFs
+
+GTIF Austria evolves in technnical cooperation with the following initiatives governed by the European Space Agency:
+
+* [GTIF Demonstrator](https://gtif.esa.int)
+* [Baltic GTIF](https://baltic-gtif.github.io/baltic-client/)
+* [Cerulean GTIF](https://cif.eox.at/)
+* [UKIF](https://www.gtif-uk-ireland-france.net/)
