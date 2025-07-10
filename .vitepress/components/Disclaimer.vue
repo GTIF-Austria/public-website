@@ -38,12 +38,12 @@
 }
 .disclaimer > p {
   line-height: 28px;
+  margin: 0;
 }
 svg {
   width: 28px;
   height: 28px;
   display: inline;
-  margin-bottom: -8px;
   fill: var(--vp-c-white);
 }
 </style>

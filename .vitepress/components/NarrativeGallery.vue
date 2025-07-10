@@ -1,77 +1,86 @@
 <script setup>
-import { data as narratives } from "../narratives.data.js";
+if (window && !customElements.get("eox-itemfilter")) import("@eox/itemfilter");
+import { ref, onMounted } from "vue";
+import { withBase, useRouter } from "vitepress";
+// import { trackEvent } from "@eox/pages-theme-eox/src/helpers.js";
 
-const narrativesExcerpts = narratives.map((n) => {
-  if (!import.meta.env.SSR) {
-    const el = document.createElement("html");
-    el.innerHTML = n.html;
-    return (
-      el.querySelector("h1")?.textContent ||
-      n.url.replace("/narratives/", "").replace(".html", "")
+const router = useRouter();
+const items = ref([]);
+
+const filterProps = [
+  {
+    keys: ["title", "subtitle", "theme"],
+    title: "By keyword",
+    type: "text",
+    placeholder: "Search in title or subtitle",
+    expanded: true,
+  },
+  // {
+  //   "key": 'theme',
+  //   "title": 'By theme',
+  //   expanded: true
+  // }
+];
+
+onMounted(async () => {
+  try {
+    const response = await fetch(
+      "https://gtif-austria.github.io/public-narratives/narratives.json",
     );
+    const results = await response.json();
+    results.forEach((res) => {
+      res.image =
+        "https://gtif-austria.github.io/public-narratives/" + res.image;
+    });
+    items.value = results;
+  } catch (error) {
+    console.error("Error fetching JSON:", error);
   }
 });
+
+// Click event handler
+const handleResultClick = (evt) => {
+  const sections = evt.detail.file.split("/");
+  const filename = sections[sections.length - 1].split(".")[0];
+  // trackEvent(['narratives', 'select', filename]);
+  router.go(withBase(`/narratives/${filename}`));
+};
 </script>
 
 <template>
-  <div class="gallery">
-    <a
-      v-for="(narrative, index) in narratives"
-      class="narrative"
-      :href="narrative.url"
+  <client-only>
+    <eox-itemfilter
+      :items="items"
+      titleProperty="title"
+      imageProperty="cover-image"
+      :filterProperties="filterProps"
+      resultType="cards"
+      @select="handleResultClick"
+      style="--select-filter-max-items: 10"
+      class="large-margin bottom-margin"
     >
-      <img
-        v-if="narrative?.frontmatter?.['cover-image']"
-        :src="narrative.frontmatter['cover-image']"
-        clas="background"
-      />
-      <p>{{ narrativesExcerpts[index] }}</p>
-    </a>
-  </div>
+      <h6 slot="filterstitle" class="small vertical-margin">
+        Filter Narratives:
+      </h6>
+      <h6
+        slot="resultstitle"
+        class="large bottom-padding top-margin small-margin"
+      >
+        Narrative Gallery
+      </h6>
+    </eox-itemfilter>
+  </client-only>
+
+  <div class="large-space"></div>
 </template>
 
-<style scoped>
-.gallery {
-  --columns: 1;
+<style>
+eox-itemfilter {
+  --form-flex-direction: row;
 }
-@media screen and (min-width: 480px) {
-  .gallery {
-    --columns: 2;
+@media (max-width: 768px) {
+  eox-itemfilter {
+    --form-flex-direction: column;
   }
-}
-@media screen and (min-width: 768px) {
-  .gallery {
-    --columns: 3;
-  }
-}
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(var(--columns), 1fr);
-  gap: 8px;
-  margin: 64px 0;
-}
-.narrative {
-  border-radius: 8px;
-  border: 1px solid var(--vp-c-brand);
-  text-decoration: none;
-  text-align: center;
-  transition: all 0.3s ease-in-out;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.narrative:hover {
-  background: var(--vp-c-brand);
-  color: white;
-}
-img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-p {
-  padding: 8px 16px;
 }
 </style>

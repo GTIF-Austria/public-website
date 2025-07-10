@@ -1,5 +1,5 @@
 <script setup>
-import Layout from "vitepress/dist/client/theme-default/Layout.vue";
+import Layout from "@eox/pages-theme-eox/src/Layout.vue";
 import Disclaimer from "../components/Disclaimer.vue";
 </script>
 

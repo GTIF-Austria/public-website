@@ -1,17 +1,23 @@
 @import "/fonts/poppins/poppins.css";
 
-body {
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  font-family: Poppins, sans-serif;
+* {
+  font-family: Poppins, sans-serif !important;
 }
 
-@media (min-width: 960px) {
-  .main h1.name,
-  .main p.text {
-    font-size: 52px;
-  }
-  .main p.tagline {
-    font-size: 21px;
-  }
+.top-nav {
+  height: 60px;
+}
+.top-nav .logo {
+  height: 24px;
+}
+.top-nav nav .button {
+  color: var(--on-surface);
+}
+:root,
+:root:has(.top-nav.at-top) {
+  --vp-nav-height: 60px !important;
+}
+
+header {
+  height: auto;
 }

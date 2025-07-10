@@ -1,28 +1,18 @@
 {
   "name": "public-website",
-  "version": "0.1.0",
-  "description": "Public website of GTIF-Austria",
+  "version": "0.2.0",
   "type": "module",
-  "scripts": {
-    "docs:dev": "vitepress dev",
-    "clone_narratives": "git clone https://github.com/GTIF-Austria/public-narratives.git narratives",
-    "dev": "NODE_OPTIONS='--experimental-network-imports=node' vitepress dev",
-    "build": "npm run clone_narratives && NODE_OPTIONS='--experimental-network-imports=node' vitepress build",
-    "serve": "NODE_OPTIONS='--experimental-network-imports=node' vitepress serve",
-    "format": "npx prettier --write ."
-  },
-  "author": "EOX",
-  "license": "ISC",
   "devDependencies": {
-    "@eox/eslint-config": "^2.0.0",
-    "@eox/pages-theme-eox": "^0.1.1"
+    "@eox/pages-theme-eox": "^0.9.3"
+  },
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "serve": "vitepress serve",
+    "format": "npx prettier --write **/*.{js,css,vue}"
   },
   "dependencies": {
-    "@eodash/eodash": "https://pkg.pr.new/eodash/eodash/@eodash/eodash@ad58c80",
-    "@eox/map": "^1.20.0",
-    "@eox/storytelling": "^1.7.1",
-    "mustache": "^4.2.0",
-    "vitepress": "^1.6.3",
-    "vue": "^3.4.21"
+    "@eodash/eodash": "https://pkg.pr.new/eodash/eodash/@eodash/eodash@6989c01",
+    "@eox/storytelling": "^1.9.0"
   }
 }
