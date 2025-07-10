@@ -8,6 +8,7 @@
       transform: translateY(calc(var(--vp-nav-height) - 2px));
       margin-top: calc(var(--vp-nav-height) * -1 - 90px + 48px);
       margin-bottom: var(--vp-nav-height);
+      --eox-storytelling-hero-height: 48dvh;
     "
   >
   </eox-storytelling>
