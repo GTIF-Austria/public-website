@@ -13,6 +13,9 @@
 .top-nav nav .button {
   color: var(--on-surface);
 }
+.top-nav .actions .button {
+  display: inline-flex !important;
+}
 :root,
 :root:has(.top-nav.at-top) {
   --vp-nav-height: 60px !important;
