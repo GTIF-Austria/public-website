@@ -3,7 +3,7 @@
   "version": "0.2.0",
   "type": "module",
   "devDependencies": {
-    "@eox/pages-theme-eox": "^0.9.3"
+    "@eox/pages-theme-eox": "^0.10.1"
   },
   "scripts": {
     "dev": "vitepress dev",

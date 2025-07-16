@@ -1,14 +1,12 @@
 import { markRaw } from "vue";
 import EOX from "@eox/pages-theme-eox";
 import "./custom.css";
-import Layout from "./Layout.vue";
 import Narrative from "../views/Narrative.vue";
 import NarrativeGallery from "../components/NarrativeGallery.vue";
 
 // https://vitepress.dev/guide/custom-theme#theme-interface
 export default {
   extends: EOX,
-  Layout,
   async enhanceApp({ app, router, siteData }) {
     EOX.enhanceApp({ app, router, siteData });
 
