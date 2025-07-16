@@ -9,17 +9,17 @@ const items = ref([]);
 
 const filterProps = [
   {
-    keys: ["title", "subtitle", "theme"],
+    keys: ["title", "subtitle", "domain", "tags"],
     title: "By keyword",
     type: "text",
-    placeholder: "Search in title or subtitle",
+    placeholder: "Search in title or tags",
     expanded: true,
   },
-  // {
-  //   "key": 'theme',
-  //   "title": 'By theme',
-  //   expanded: true
-  // }
+  {
+    key: "domain",
+    title: "By domain",
+    expanded: true,
+  },
 ];
 
 onMounted(async () => {
