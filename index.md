@@ -7,8 +7,8 @@ hero:
   #   src: http://picsum.photos/800/600
   #   alt: Hero Image
   background:
-    src: https://images.pexels.com/photos/414905/pexels-photo-414905.jpeg
-    alt: Background Image
+    src: /assets/hero-bg.jpg
+    alt: Windmills in countryside
   actions:
     - theme: brand
       text: Narratives Gallery
