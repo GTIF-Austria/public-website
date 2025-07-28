@@ -26,6 +26,13 @@ export default defineConfig({
       <span>This site is currently under development.</span>
     `,
   },
+  async transformPageData(pageData) {
+    // If page has no explicit title but has params.title set,
+    // use that instead (e.g. for dynamic fetched routes)
+    if (!pageData.title && pageData.params?.title) {
+      pageData.title = pageData.params?.title;
+    }
+  },
   vue: {
     template: {
       compilerOptions: {

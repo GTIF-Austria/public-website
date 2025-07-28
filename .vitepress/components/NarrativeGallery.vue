@@ -1,5 +1,4 @@
 <script setup>
-if (window && !customElements.get("eox-itemfilter")) import("@eox/itemfilter");
 import { ref, onMounted } from "vue";
 import { withBase, useRouter } from "vitepress";
 // import { trackEvent } from "@eox/pages-theme-eox/src/helpers.js";
