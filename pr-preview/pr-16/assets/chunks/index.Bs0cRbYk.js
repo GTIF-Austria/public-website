@@ -1,1 +1,0 @@
-import{b as p}from"./index.KH_2m63C.js";function f(t,o={}){const n=Number(t[0]),r=Number(t[1]),s=Number(t[2]),e=Number(t[3]);if(t.length===6)throw new Error("@turf/bbox-polygon does not support BBox with 6 positions");const i=[n,r];return p([[i,[s,r],[s,e],[n,e],i]],o.properties,{bbox:t,id:o.id})}export{f as b};
