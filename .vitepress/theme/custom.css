@@ -30,3 +30,7 @@ header {
     padding: 3rem 1.5rem !important;
   }
 }
+
+.news-banner {
+  top: calc(100dvh - 40px) !important;
+}
