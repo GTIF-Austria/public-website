@@ -37,5 +37,5 @@ layout: false
 <NavBar></NavBar>
 <eo-dash
     .config="withBase('/dashboard.js')"
-    style="display: block; height: calc(100dvh - var(--vp-nav-height));"
+    style="display: block; height: calc(100dvh - var(--vp-nav-height)) !important;"
 ></eo-dash>

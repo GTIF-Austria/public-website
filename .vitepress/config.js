@@ -3,6 +3,11 @@ import baseConfig from "@eox/pages-theme-eox/config";
 
 export default defineConfig({
   extends: baseConfig("gtif-austria"),
+  vite:{
+    server:{
+      allowedHosts: true,
+    }
+  },
   // Change the page config here
   themeConfig: {
     nav: [
