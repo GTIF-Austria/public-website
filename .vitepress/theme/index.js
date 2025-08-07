@@ -17,6 +17,7 @@ export default {
       await import("@eox/itemfilter");
       await import("@eox/map");
       await import("@eox/jsonform");
+      await import("@eox/map/src/plugins/advancedLayersAndSources");
     }
   },
 };
