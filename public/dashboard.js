@@ -39,6 +39,15 @@ export default {
           name: "EodashMap",
           properties: {
             enableCompare: true,
+            btns: {
+              enableExportMap: false,
+              enableCompareIndicators: false,
+              enableSearch: false,
+            },
+            btnsPosition: {
+              x: "12/9/9",
+              y: "3/2/2",
+            },
             center: [13.3587, 47.4706],
             zoom: 7,
           },
@@ -257,21 +266,6 @@ export default {
           },
         },
         {
-          defineWidget: (selected) => {
-            return selected
-              ? {
-                  id: "Buttons",
-                  layout: { x: 8, y: 0, w: 1, h: 2 },
-                  title: "Buttons",
-                  type: "internal",
-                  widget: {
-                    name: "EodashMapBtns",
-                  },
-                }
-              : null;
-          },
-        },
-        {
           defineWidget: (selectedSTAC) =>
             selectedSTAC?.links.some((l) => l.rel === "service")
               ? {
@@ -391,24 +385,6 @@ export default {
                   },
                 }
               : null,
-        },
-        {
-          defineWidget: (selected) => {
-            return selected
-              ? {
-                  id: "Buttons",
-                  layout: { x: 8, y: 0, w: 1, h: 2 },
-                  title: "Buttons",
-                  type: "internal",
-                  widget: {
-                    name: "EodashMapBtns",
-                    properties: {
-                      compareIndicators: false,
-                    },
-                  },
-                }
-              : null;
-          },
         },
         {
           defineWidget: (selectedSTAC) => {
