@@ -12,6 +12,24 @@ layout: false
             if (window.eodashStore) {
                 clearInterval(interval)
                 callback(window.eodashStore)
+                const dash = document.querySelector("eo-dash");
+                const style = document.createElement("style");
+                style.textContent = `
+                    .map-buttons-container .v-btn {
+                    --v-btn-height: 18px !important;
+                    }
+                    .ol-mouse-position {
+                    font-size: 10px;
+                    }
+                    #cursor-coordinates {
+                    padding: 0px 8px;
+                    }
+                    .eodash-overlay {
+                    top: 8px!important;
+                    left:-20px!important;
+                    }
+                `;
+                dash.shadowRoot.appendChild(style);
             }
         }, 100)
     }
