@@ -90,7 +90,7 @@ export default {
                     name: "EodashLayerControl",
                     properties: {
                       slider: false,
-                      tools: ["datetime", "info", "legend"],
+                      tools: ["datetime", "info", "legend", "config"],
                       cssVars: {
                         "--list-padding": "0",
                         "--tools-button-visibility": "none",
@@ -119,7 +119,7 @@ export default {
                     name: "EodashStacInfo",
                     properties: {
                       tags: [],
-                      header: [],
+                      header: ["title"],
                       footer: [],
                       body: ["description"],
                       styleOverride: "",
