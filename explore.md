@@ -28,6 +28,9 @@ layout: false
                     top: 8px!important;
                     left:-20px!important;
                     }
+                    .v-btn.v-theme--dashboardTheme.text-primary.v-btn--density-default.rounded-xl.v-btn--size-default.v-btn--variant-text.text-none.text-body-2 {
+                    color: #000 !important;
+                    }
                 `;
                 dash.shadowRoot.appendChild(style);
             }
