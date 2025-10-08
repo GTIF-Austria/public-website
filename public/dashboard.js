@@ -40,7 +40,7 @@ export default {
           properties: {
             enableCompare: true,
             btns: {
-              enableExportMap: false,
+              enableExportMap: true,
               enableCompareIndicators: false,
               enableSearch: false,
             },
