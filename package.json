@@ -13,6 +13,6 @@
   },
   "dependencies": {
     "@eodash/eodash": "5.3.2",
-    "@eox/storytelling": "^1.9.7"
+    "@eox/storytelling": "^1.9.8"
   }
 }
