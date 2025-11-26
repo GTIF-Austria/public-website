@@ -194,7 +194,7 @@ export default {
             btns: {
               enableExportMap: true,
               enableCompareIndicators: true,
-              enableSearch: true,
+              enableSearch: false,
               enableBackToPOIs: true,
             },
             btnsPosition: {
@@ -327,7 +327,7 @@ export default {
                 fallbackTemplate: "expert",
               },
               enableBackToPOIs: false,
-              enableSearch: true,
+              enableSearch: false,
             },
             btnsPosition: {
               x: "12/9/9",
