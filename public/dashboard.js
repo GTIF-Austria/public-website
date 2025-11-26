@@ -33,7 +33,7 @@ export default {
         },
       },
       background: {
-        id: "background-map",
+        id: "background-map-light",
         type: "internal",
         widget: {
           name: "EodashMap",
@@ -46,7 +46,8 @@ export default {
             },
             btnsPosition: {
               x: "12/9/9",
-              y: "3/2/2",
+              y: 2,
+              gap: 32
             },
             center: [13.3587, 47.4706],
             zoom: 7,
@@ -183,12 +184,26 @@ export default {
         },
       },
       background: {
-        id: "background-map",
+        id: "background-map-expert",
         type: "internal",
         widget: {
           name: "EodashMap",
           properties: {
             enableCompare: true,
+            zoomToExtent: true,
+            btns: {
+              enableExportMap: true,
+              enableCompareIndicators: true,
+              enableSearch: true,
+              enableBackToPOIs: true,
+            },
+            btnsPosition: {
+              x: "12/9/9",
+              y: 2,
+              gap: 32
+            },
+            center: [13.3587, 47.4706],
+            zoom: 7,
           },
         },
       },
@@ -299,18 +314,32 @@ export default {
         },
       },
       background: {
-        id: "background-map",
+        id: "background-map-compare",
         type: "internal",
         widget: {
           name: "EodashMap",
           properties: {
             enableCompare: true,
+            zoomToExtent: true,
+            btns: {
+              enableExportMap: false,
+              enableCompareIndicators: {
+                fallbackTemplate: "expert",
+              },
+              enableBackToPOIs: false,
+              enableSearch: true,
+            },
+            btnsPosition: {
+              x: "12/9/9",
+              y: 2,
+              gap: 32
+            },
           },
         },
       },
       widgets: [
         {
-          id: Symbol(),
+          id: "Tools",
           type: "internal",
           title: "Tools",
           layout: { x: 0, y: 0, w: 3, h: 1 },
@@ -330,7 +359,7 @@ export default {
         },
         // compare indicators
         {
-          id: Symbol(),
+          id: "Compare Indicators Tools",
           type: "internal",
           title: "Tools",
           layout: { x: 9, y: 0, w: 3, h: 1 },
@@ -352,7 +381,7 @@ export default {
           },
         },
         {
-          id: Symbol(),
+          id: "Layers",
           type: "internal",
           title: "Layers",
           layout: { x: 0, y: 1, w: 3, h: 6 },
@@ -361,7 +390,7 @@ export default {
           },
         },
         {
-          id: Symbol(),
+          id: "Layers Compare",
           title: "Comparison Layers",
           layout: { x: 9, y: 1, w: 3, h: 6 },
           type: "internal",
@@ -376,7 +405,7 @@ export default {
           defineWidget: (selectedSTAC) =>
             selectedSTAC?.links.some((l) => l.rel === "service")
               ? {
-                  id: Symbol(),
+                  id: "Processes",
                   type: "internal",
                   title: "Processes",
                   layout: { x: 0, y: 7, w: 3, h: 5 },

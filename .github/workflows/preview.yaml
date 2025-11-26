@@ -20,6 +20,8 @@ permissions:
 jobs:
   deploy-preview:
     runs-on: ubuntu-latest
+    env:
+      EODASH_OPENCAGE: ${{ secrets.EODASH_OPENCAGE }}
     permissions:
       contents: write
       pages: write
