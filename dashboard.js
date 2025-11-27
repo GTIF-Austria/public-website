@@ -70,7 +70,7 @@ export default {
               itemFilterConfig: {
                 resultType: "cards",
                 filtersTitle: "",
-                style: "--padding: 72px",
+                aggregateResults: "collection_group",
                 filterProperties: [],
                 resultsTitle: "Explore more indicators",
                 subTitleProperty: "subtitle",
