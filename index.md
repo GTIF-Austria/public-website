@@ -105,7 +105,7 @@ This Website also gives access to interactive graphical user interfaces (WebGUIs
 
 The Capabilities accessible on this Website are of Austrian provenance or with a geographical coverage of Austrian territories. Mostly, they have been developed and coordinated under the Digital Twin Austria GTIF programme. Some are contributions to international GTIF programmes organized via projects of the European Space Agency.
 
-All relevant GTIF Austria initiatives are invited to contribute their Capabilities using the tools available in the [GTIF-Austria Workspace](https://dashboard.gtif-austria.gtif.eox.at/). Presently, the Workspace includes the Data Editor and Narrative Editor applications.
+All relevant GTIF Austria initiatives are invited to contribute their Capabilities using the tools available in the [GTIF Austria Workspace](https://dashboard.gtif-austria.gtif.eox.at/). Presently, the Workspace includes the Data Editor and Narrative Editor applications.
 
 ### Public and Commercial GTIF
 
@@ -113,12 +113,12 @@ Information about the suppliers behind each of the Capabilities is presented on 
 
 ### Links to International GTIFs
 
-GTIF-Austria evolves in technnical cooperation with the following initiatives governed by the European Space Agency:
+GTIF Austria evolves in technnical cooperation with the following initiatives governed by the European Space Agency (ESA):
 
 * [GTIF Demonstrator](https://gtif.esa.int) (ESA site)
 * [Baltic GTIF](https://gtif-baltic.info) for Lithuania, Germany, Poland, Estonia, Latvia
 * [Cerulean GTIF](https://cif.eox.at/) for Denmark, Canada, Northern Atlantic
-* [UKIF](https://gtif-ukif.github.io/gtif-ukif-client) for United Kingdom, Ireland, France
+* [UKIF GTIF](https://gtif-ukif.github.io/gtif-ukif-client) for United Kingdom, Ireland, France
 
 <br />
 <br />
