@@ -42,7 +42,10 @@ export default {
             btns: {
               enableExportMap: true,
               enableCompareIndicators: false,
-              enableSearch: false,
+              enableSearch: true,
+              searchParams: {
+                countrycode: "at",
+              },
             },
             btnsPosition: {
               x: "12/9/9",
@@ -194,7 +197,10 @@ export default {
             btns: {
               enableExportMap: true,
               enableCompareIndicators: true,
-              enableSearch: false,
+              enableSearch: true,
+              searchParams: {
+                countrycode: "at",
+              },
               enableBackToPOIs: true,
             },
             btnsPosition: {
@@ -327,7 +333,10 @@ export default {
                 fallbackTemplate: "expert",
               },
               enableBackToPOIs: false,
-              enableSearch: false,
+              enableSearch: true,
+              searchParams: {
+                countrycode: "at",
+              },
             },
             btnsPosition: {
               x: "12/9/9",
