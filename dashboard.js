@@ -49,7 +49,7 @@ export default {
             },
             btnsPosition: {
               x: "12/9/9",
-              y: 2,
+              y: 1,
               gap: 32
             },
             center: [13.3587, 47.4706],
@@ -205,7 +205,7 @@ export default {
             },
             btnsPosition: {
               x: "12/9/9",
-              y: 2,
+              y: 1,
               gap: 32
             },
             center: [13.3587, 47.4706],
@@ -340,7 +340,7 @@ export default {
             },
             btnsPosition: {
               x: "12/9/9",
-              y: 2,
+              y: 1,
               gap: 32
             },
           },
