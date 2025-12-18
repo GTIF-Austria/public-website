@@ -6,6 +6,7 @@ layout: page
   <eox-storytelling
     show-nav
     :markdown-url="params.file"
+    show-hero-scroll-indicator
     class="full-width"
     style="
       transform: translateY(calc(var(--vp-nav-height) - 2px));
