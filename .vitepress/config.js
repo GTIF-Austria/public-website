@@ -14,8 +14,8 @@ export default defineConfig({
     nav: [
       { text: "Home", link: "/" },
       { text: "Narratives", link: "/narratives", activeMatch: "/narratives/" },
-      { text: "Providers", link: "/providers", activeMatch: "/providers/" },
       { text: "Explore data", link: "/explore/" },
+      { text: "Providers", link: "/providers", activeMatch: "/providers/" },
       {
         text: "Log in",
         link: "https://dashboard.gtif-austria.gtif.eox.at",
