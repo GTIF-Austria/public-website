@@ -41,7 +41,7 @@
   },
   "EOX": {
     "Url": "https://eox.at",
-    "Description": "EOX IT Services GmbH EOX is a geospatial engineering and service company based in Austria, a non-startup, founder-managed business. EOX creates Open Source software and tools (opens new window)to allow people to consume geospatial data in the cloud and on the Web. EOX focuses on getting the most value out of the vast amount of the data acquired by Earth observation satellites. EOX furnishes software and cloud infrastructure services to selected customers in geoscience and European government organizations.",
+    "Description": "EOX IT Services GmbH EOX is a geospatial engineering and service company based in Austria, a non-startup, founder-managed business. EOX creates Open Source software and tools to allow people to consume geospatial data in the cloud and on the Web. EOX focuses on getting the most value out of the vast amount of the data acquired by Earth observation satellites. EOX furnishes software and cloud infrastructure services to selected customers in geoscience and European government organizations.",
     "Logo": "https://github.com/GTIF-Austria/public-assets/blob/main/logos/eox.jpg?raw=true"
   },
   "Fraunhofer IIS": {
@@ -150,3 +150,4 @@
     "Logo": "https://github.com/GTIF-Austria/public-assets/blob/main/logos/z_gis.jpg?raw=true"
   }
 }
+
