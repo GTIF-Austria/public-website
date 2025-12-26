@@ -38,12 +38,16 @@ layout: page
       indicators: getIndicatorsForProvider(key),
       narratives: getNarrativesForProvider(key),
     }));
-    providers.value = enhancedProviders.map(p => ({
-      id: p.id,
-      title: p.id,
-      content: p.Description,
+    providers.value = enhancedProviders.map(provider => ({
+      id: provider.id,
+      title: provider.id,
+      content: `
+        ${provider.Description}${provider['NoR Offering'] ? `<br /><br /><a href='${provider['NoR Offering']}' target='_blank'>NoR Offering</a>` : ''}
+        ${provider.narratives?.length ? `<br /><br />Narratives:<br />${provider.narratives.map(n => `<a href='${withBase(`/narratives/${n.file.split(/\/|\\/).pop().replace('.md', '')}`)}'>${n.title}</a>`).join('<br />')}` : ''}
+        ${provider.indicators?.length ? `<br /><br />Datasets:<br /> ${provider.indicators.map(i => `<a href='${withBase(`/explore/?indicator=${i.code}`)}'>${i.title}</a>`).join('<br />')}` : ''}
+      `,
       icon: {
-        html: `<img src="${p.Logo}" alt="${p.id} logo" style="height: 100%; width: auto" />`,
+        html: `<img src="${provider.Logo}" alt="${provider.id} logo" style="height: 100%; width: auto" />`,
         width: "auto"
       }
     }));
