@@ -49,6 +49,10 @@ layout: page
       icon: {
         html: `<img src="${provider.Logo}" alt="${provider.id} logo" style="height: 100%; width: auto" />`,
         width: "auto"
+      },
+      link: {
+        text: "Provider web page",
+        href: provider.Url
       }
     }));
   })
