@@ -1,6 +1,6 @@
 {
   "AEA": {
-    "Url": "https://www.aee-intec.at/",
+    "Url": "https://www.energyagency.at/en/",
     "Description": "AEA - Austrian Energy Agency is a government-affiliated organization in Austria focused on advancing the country's energy policy and promoting sustainable energy practices. Established in 1977, the AEA operates as a center for expertise in energy technologies and policies. Focus areas are renewable energy development (solar, wind, hydro, and biomass); energy efficiency measures in buildings and industry; and climate protection and reducing greenhouse gas emissions.",
     "Logo": "https://github.com/GTIF-Austria/public-assets/blob/main/logos/aea.jpg?raw=true"
   },
@@ -30,13 +30,13 @@
     "Logo": "https://github.com/GTIF-Austria/public-assets/blob/main/logos/dhi.jpg?raw=true"
   },
   "Energiewerkstatt": {
-    "Url": "https://energiewerkstatt.org/",
+    "Url": "https://energiewerkstatt.org/?lang=en",
     "Description": "Energiewerkstatt was founded in 1986 as an association for the promotion of renewable energy. The year in which the Chernobyl nuclear disaster occurred not far from Austria. This event was the initial spark for the foundation and accelerated the development of Energiewerkstatt. Almost four decades later, Energiewerkstatt is an internationally active, highly specialized technical services company with a clear focus on pioneering projects. To date, the company has carried out over 300 wind measurements worldwide, are responsible for the planning and monitoring of wind energy projects and are actively involved in research projects.",
     "Logo": "https://github.com/GTIF-Austria/public-assets/blob/main/logos/energiewerkstatt.jpg?raw=true"
   },
   "EODC": {
-    "Url": "",
-    "Description": "The EODC (Earth Observation Data Centre for Water Resources Monitoring GmbH) is an Austrian public-private partnership that acts as a high-tech 'engine room' for satellite data.Headquartered in Vienna, it was founded in 2014 by a consortium including the TU Wien (Vienna University of Technology), GeoSphere Austria, and private technology companies. Its primary purpose is to bridge the gap between massive Big Data coming from space and the practical needs of researchers and businesses. While its name emphasizes 'Water Resources,' the EODC’s scope has expanded significantly: Hydrology & Soil Moisture (It is a global leader in monitoring soil moisture and water cycles, which is critical for flood and drought prediction); Land & Forest Monitoring (It provides high-resolution data for tracking changes in vegetation, which is vital for managing forest health and agricultural productivity); openEO Platform (EODC is the lead coordinator for the openEO project, an initiative backed by the European Space Agency (ESA) to create a standardized way for users to analyze Earth observation data across different cloud platforms).",
+    "Url": "https://eodc.eu/",
+    "Description": "The EODC (Earth Observation Data Centre for Water Resources Monitoring GmbH) is an Austrian public-private partnership that acts as a high-tech 'engine room' for satellite data. Headquartered in Vienna, it was founded in 2014 by a consortium including the TU Wien (Vienna University of Technology), GeoSphere Austria, and private technology companies. Its primary purpose is to bridge the gap between massive Big Data coming from space and the practical needs of researchers and businesses. While its name emphasizes 'Water Resources,' the EODC’s scope has expanded significantly: Hydrology & Soil Moisture ; Land & Forest Monitoring; openEO Platform (EODC is the lead coordinator for the openEO project, an initiative backed by the European Space Agency (ESA) to create a standardized way for users to analyze Earth observation data across different cloud platforms).",
     "Logo": "https://github.com/GTIF-Austria/public-assets/blob/main/logos/eodc.jpg?raw=true"
   },
   "EOX": {
@@ -45,7 +45,7 @@
     "Logo": "https://github.com/GTIF-Austria/public-assets/blob/main/logos/eox.jpg?raw=true"
   },
   "Fraunhofer IIS": {
-    "Url": "",
+    "Url": "https://www.iis.fraunhofer.de/en.html",
     "Description": "Fraunhofer IIS (Institute for Integrated Circuits) is one of the most globally influential research institutes within the German Fraunhofer-Gesellschaft. Headquartered in Erlangen, it is famous for being the birthplace of the mp3. Research focus areas are cognitive sensor technologies; positioning and networks; and X-ray technologies.",
     "Logo": "https://github.com/GTIF-Austria/public-assets/blob/main/logos/fraunhofer-iis.jpg?raw=true"
   },
@@ -134,7 +134,7 @@
     "Description": "ubicube GmbH is a Vienna-based high-tech startup specializing in the combination of Artificial Intelligence and geospatial data. The company focuses on translating satellite imagery into economic and demographic insights, primarily for the real estate, urban planning, and insurance sectors. Key products and services include: ubiMonitor, a tool which automatically tracks changes in the building stock. It detects new constructions, extensions, or demolitions and can even identify specific features like solar panels or green roofs. ubiMetric which provides property-level analytics. For example, a real estate investor can use it to assess the sealing degree (pavement vs. grass) of a portfolio to meet sustainability reporting requirements (like CSRD).",
     "Logo": "https://github.com/GTIF-Austria/public-assets/blob/main/logos/ubicube.jpg?raw=true"
   },
-  "Virtual Vehicle Research GmbH": {
+  "Virtual Vehicle": {
     "Url": "https://www.virtual-vehicle.at",
     "Description": "Virtual Vehicle Research GmbH is Europe’s largest research center for virtual vehicle development. Headquartered in Graz, it acts as a critical bridge between university research (specifically TU Graz) and the industrial needs of the automotive and rail sectors.The center’s 300+ employees work across several high-tech domains: Automated driving; battery & e-mobility; rail systems; human factors. Virtual Vehicle Research is a COMET (Competence Centers for Excellent Technologies) center, which is a major Austrian funding program.",
     "Logo": "https://github.com/GTIF-Austria/public-assets/blob/main/logos/virtual_vehicle.jpg?raw=true"
@@ -150,4 +150,5 @@
     "Logo": "https://github.com/GTIF-Austria/public-assets/blob/main/logos/z_gis.jpg?raw=true"
   }
 }
+
 
