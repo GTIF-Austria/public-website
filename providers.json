@@ -9,9 +9,19 @@
     "Description": "AEE – Institut für Nachhaltige Technologien, founded in 1988, is today one of Europe's leading institutes for applied research in the field of renewable energy and resource efficiency. Within its three target groups – Buildings, Cities & Networks, and Industrial Systems – and three technological working groups – Renewable Energies, Thermal Storage, and Water and Process Technologies – the range of R&D projects carried out extends from fundamental research projects to the implementation of demonstration plants.",
     "Logo": "https://github.com/GTIF-Austria/public-assets/blob/main/logos/aee_intec.jpg?raw=true"
   },
-  "AIT": {
-    "Url": "https://www.ait.ac.at/",
-    "Description": "AIT Austrian Institute of Technology is Austria's largest research and technology organisation with strong links to European partners. The institute is an essential network node in the Austrian and European research and innovation system. The AIT focuses on two main areas of research: resilient and sustainable infrastructures, particularly in the fields of energy, transport and health, and the digital transformation of industry and society.",
+  "AIT Center for Energy": {
+    "Url": "https://www.ait.ac.at/en/about-the-ait/center/center-for-energy",
+    "Description": "The AIT Center for Energy is a leading research hub within the AIT Austrian Institute of Technology, Austria’s largest non-university research institution. It acts as a bridge between fundamental science and industrial application, employing roughly 250 experts. The center’s primary objective is to redesign our energy infrastructure to meet climate goals while ensuring the power stays on and costs remain manageable. Core research areas include electric energy systems (smart grid); sustainable thermal energy systems; photovoltaics; smart cities and regions; hydrogen and sector coupling.",
+    "Logo": "https://github.com/GTIF-Austria/public-assets/blob/main/logos/ait.jpg?raw=true"
+  },
+  "AIT Center for Transport Technologies": {
+    "Url": "https://www.ait.ac.at/en/about-the-ait/center/center-for-transport-technologies",
+    "Description": "The AIT Center for Transport Technologies is a leading research hub within the AIT Austrian Institute of Technology, Austria’s largest non-university research institution. With approximately 200 experts, the center focuses on developing sustainable, safe, and intelligent mobility solutions for the future. Its work is primarily geared toward decarbonizing transport and integrating digital technologies into infrastructure and vehicle systems. Core research areas include electric vehicle technologies; transportation infrasztructure technologies; and integrated mobility systems.",
+    "Logo": "https://github.com/GTIF-Austria/public-assets/blob/main/logos/ait.jpg?raw=true"
+  },
+ "AIT Center for Vision, Automation & Control": {
+    "Url": "https://www.ait.ac.at/en/about-the-ait/center/center-for-vision-automation-control",
+    "Description": "The AIT Center for Vision, Automation & Control is a leading research hub within the AIT Austrian Institute of Technology, Austria’s largest non-university research institution. With approximately 120 experts, the center focuses on enabling machines to 'see', 'think', and 'act' autonomously. Core research areas include High-performance vision systems; assistive and aoutonumous systems; and Complex Dynamical Systems (CDS).",
     "Logo": "https://github.com/GTIF-Austria/public-assets/blob/main/logos/ait.jpg?raw=true"
   },
   "Austria Tourism": {
@@ -150,5 +160,6 @@
     "Logo": "https://github.com/GTIF-Austria/public-assets/blob/main/logos/z_gis.jpg?raw=true"
   }
 }
+
 
 
