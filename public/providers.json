@@ -21,7 +21,7 @@
   },
  "AIT Center for Vision, Automation & Control": {
     "Url": "https://www.ait.ac.at/en/about-the-ait/center/center-for-vision-automation-control",
-    "Description": "The AIT Center for Vision, Automation & Control is a leading research hub within the AIT Austrian Institute of Technology, Austria’s largest non-university research institution. With approximately 120 experts, the center focuses on enabling machines to 'see', 'think', and 'act' autonomously. Core research areas include High-performance vision systems; assistive and aoutonumous systems; and Complex Dynamical Systems (CDS).",
+    "Description": "The AIT Center for Vision, Automation & Control is a leading research hub within the AIT Austrian Institute of Technology, Austria’s largest non-university research institution. With approximately 120 experts, the center focuses on enabling machines to 'see', 'think', and 'act' autonomously. Core research areas include high-performance vision systems; assistive and autonumous systems; and Complex Dynamical Systems (CDS).",
     "Logo": "https://github.com/GTIF-Austria/public-assets/blob/main/logos/ait.jpg?raw=true"
   },
   "Austria Tourism": {
@@ -160,6 +160,7 @@
     "Logo": "https://github.com/GTIF-Austria/public-assets/blob/main/logos/z_gis.jpg?raw=true"
   }
 }
+
 
 
 
