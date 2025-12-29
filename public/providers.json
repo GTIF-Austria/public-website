@@ -154,12 +154,13 @@
     "Description": "Waterjade Srl is an Italian 'Climate-Tech' company that specializes in high-precision water forecasting and monitoring. Based in Pergine Valsugana (Trento), it operates at the intersection of hydrology, satellite technology, and artificial intelligence. It is part of the Aquanexa industrial group, which is backed by the Algebris Green Transition Fund. Waterjade’s primary innovation is its Watershed Digital Twin. This software creates a virtual replica of a physical catchment area (the land where water collects) to simulate the water cycle. The company provides a decision support system called Waterjade Analytics that helps organizations answer two critical questions: How much water is there? and When will it be available?",
     "Logo": "https://github.com/GTIF-Austria/public-assets/blob/main/logos/waterjade.jpg?raw=true"
   },
-  "Z_GIS": {
+  "ZGIS": {
     "Url": "https://www.plus.ac.at/geoinformatik/?lang=en",
-    "Description": "Z_GIS (short for Zentrum für Geoinformatik) is the Department of Geoinformatics at the Paris Lodron University of Salzburg (PLUS). It is a world-renowned Center of Competence that bridges the gap between academic research, professional education, and practical application in the field of Geographic Information Systems (GIS) and Earth Observation (EO). Z_GIS is structured into several labs that tackle specific global challenges using spatial data: Risk, hazard & climate; mobility lab; EO analytics; humanitarian tech (CDL GEOHUM)",
+    "Description": "ZGIS (short for Zentrum für Geoinformatik) is the Department of Geoinformatics at the Paris Lodron University of Salzburg (PLUS). It is a world-renowned Center of Competence that bridges the gap between academic research, professional education, and practical application in the field of Geographic Information Systems (GIS) and Earth Observation (EO). Z_GIS is structured into several labs that tackle specific global challenges using spatial data: Risk, hazard & climate; mobility lab; EO analytics; humanitarian tech (CDL GEOHUM)",
     "Logo": "https://github.com/GTIF-Austria/public-assets/blob/main/logos/z_gis.jpg?raw=true"
   }
 }
+
 
 
 
