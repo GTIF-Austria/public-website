@@ -28,7 +28,7 @@ hero:
   </div>
   <div class="news-item-content">
     <div class="title">
-      <a href="/assets/20251201_GTIF Technical Handbook.pdf" target="_blank">New starter information for providers of capabilities - the GTIF-Austria Technical Handbook - for download here</a>
+      <a href="/assets/GTIF Technical Handbook.pdf" target="_blank">New starter information for providers of capabilities - the GTIF-Austria Technical Handbook - for download here</a>
     </div>
     <div class="details">
    A reference guide for GTIF-Austria users. It also contains engineering insights about the platform architecture and its open-source software building blocks.
