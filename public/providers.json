@@ -156,10 +156,11 @@
   },
   "ZGIS": {
     "Url": "https://www.plus.ac.at/geoinformatik/?lang=en",
-    "Description": "ZGIS (short for Zentrum für Geoinformatik) is the Department of Geoinformatics at the Paris Lodron University of Salzburg (PLUS). It is a world-renowned Center of Competence that bridges the gap between academic research, professional education, and practical application in the field of Geographic Information Systems (GIS) and Earth Observation (EO). Z_GIS is structured into several labs that tackle specific global challenges using spatial data: Risk, hazard & climate; mobility lab; EO analytics; humanitarian tech (CDL GEOHUM)",
+    "Description": "ZGIS (short for Zentrum für Geoinformatik) is the Department of Geoinformatics at the Paris Lodron University of Salzburg (PLUS). It is a world-renowned Center of Competence that bridges the gap between academic research, professional education, and practical application in the field of Geographic Information Systems (GIS) and Earth Observation (EO). ZGIS is structured into several labs that tackle specific global challenges using spatial data: Risk, hazard & climate; mobility lab; EO analytics; humanitarian tech (CDL GEOHUM)",
     "Logo": "https://github.com/GTIF-Austria/public-assets/blob/main/logos/z_gis.jpg?raw=true"
   }
 }
+
 
 
 
