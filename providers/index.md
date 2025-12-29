@@ -42,9 +42,9 @@ layout: page
       id: provider.id,
       title: provider.id,
       content: `
-        ${provider.Description}${provider['NoR Offering'] ? `<br /><br /><a href='${provider['NoR Offering']}' target='_blank'>NoR Offering</a>` : ''}
-        ${provider.narratives?.length ? `<br /><br />Narratives:<br />${provider.narratives.map(n => `<a href='${withBase(`/narratives/${n.file.split(/\/|\\/).pop().replace('.md', '')}`)}'>${n.title}</a>`).join('<br />')}` : ''}
-        ${provider.indicators?.length ? `<br /><br />Datasets:<br /> ${provider.indicators.map(i => `<a href='${withBase(`/explore/?indicator=${i.code}`)}'>${i.title}</a>`).join('<br />')}` : ''}
+        ${provider.Description}${provider['NoR Offering'] ? `<br /><br /><a class="primary-text" href='${provider['NoR Offering']}' target='_blank'>NoR Offering</a>` : ''}
+        ${provider.narratives?.length ? `<br /><br />Narratives:<br />${provider.narratives.map(n => `<a class="primary-text" href='${withBase(`/narratives/${n.file.split(/\/|\\/).pop().replace('.md', '')}`)}'>${n.title}</a>`).join('<br />')}` : ''}
+        ${provider.indicators?.length ? `<br /><br />Datasets:<br /> ${provider.indicators.map(i => `<a class="primary-text" href='${withBase(`/explore/?indicator=${i.code}`)}'>${i.title}</a>`).join('<br />')}` : ''}
       `,
       icon: {
         html: `<img src="${provider.Logo}" alt="${provider.id} logo" style="height: 100%; width: auto" />`,
