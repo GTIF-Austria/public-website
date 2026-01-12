@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@eodash/eodash": "^5.4.0",
+    "@eox/itemfilter": "1.13.1",
     "@eox/storytelling": "^1.9.8"
   }
 }

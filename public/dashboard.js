@@ -74,6 +74,7 @@ export default {
                 resultType: "cards",
                 filtersTitle: "",
                 filterProperties: [],
+                aggregateResults: "collection_group",
                 resultsTitle: "Explore more indicators",
                 subTitleProperty: "subtitle",
                 imageProperty: "thumbnail",
@@ -228,6 +229,7 @@ export default {
               itemFilterConfig: {
                 resultType: "cards",
                 subTitleProperty: "subtitle",
+                aggregateResults: "collection_group",
                 imageProperty: "thumbnail",
                 style: {
                   "--form-flex-direction": "row",
