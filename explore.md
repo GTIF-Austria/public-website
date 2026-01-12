@@ -53,10 +53,11 @@ layout: false
             }, { immediate: true })
         })
     });
+    const cacheBuster = `?t=${new Date().getTime()}`; // Add a timestamp for cache busting
 </script>
 
 <NavBar></NavBar>
 <eo-dash
-    .config="withBase('/dashboard.js')"
+    .config="withBase(`/dashboard.js${cacheBuster}`)"
     style="display: block; height: calc(100dvh - var(--vp-nav-height)) !important;"
 ></eo-dash>

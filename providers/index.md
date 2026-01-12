@@ -22,14 +22,15 @@ layout: page
   const getNarrativesForProvider = (providerKey) => narratives.value.filter(n => n.provider === providerKey);
 
   onMounted(async () => {
-    const providersResponse = await fetch(withBase("/providers.json"));
+    const cacheBuster = `?t=${new Date().getTime()}`; // Add a timestamp for cache busting
+    const providersResponse = await fetch(withBase(`/providers.json${cacheBuster}`));
     const providersJson = await providersResponse.json();
 
-    const indicatorsResponse = await fetch("https://gtif-austria.github.io/public-catalog/GTIF-Austria/catalog.json");
+    const indicatorsResponse = await fetch(`https://gtif-austria.github.io/public-catalog/GTIF-Austria/catalog.json${cacheBuster}`);
     const indicatorsJson = await indicatorsResponse.json();
     indicators.value = indicatorsJson.links.filter(c => c.rel === "child");
 
-    const narrativesResponse = await fetch("https://gtif-austria.github.io/public-narratives/narratives.json");
+    const narrativesResponse = await fetch(`https://gtif-austria.github.io/public-narratives/narratives.json${cacheBuster}`);
     narratives.value = await narrativesResponse.json();
 
     const enhancedProviders = Object.entries(providersJson).map(([key, provider]) => ({
