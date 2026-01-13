@@ -127,7 +127,7 @@ export default {
                       footer: [],
                       body: ["description"],
                       styleOverride: "",
-                      featured: [],
+                      featured: ["providers"],
                     },
                   },
                 }
@@ -258,8 +258,12 @@ export default {
                   widget: {
                     name: "EodashStacInfo",
                     properties: {
-                      showIndicatorsBtn: false,
-                      showLayoutSwitcher: false,
+                      tags: [],
+                      header: ["title"],
+                      footer: [],
+                      body: ["description"],
+                      styleOverride: "",
+                      featured: ["providers"],
                     },
                   },
                 }
