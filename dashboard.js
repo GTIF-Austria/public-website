@@ -46,6 +46,7 @@ export default {
               searchParams: {
                 countrycode: "at",
               },
+              enableGlobe: false,
             },
             btnsPosition: {
               x: "12/9/9",
