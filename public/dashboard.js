@@ -202,6 +202,7 @@ export default {
                 countrycode: "at",
               },
               enableBackToPOIs: true,
+              enableGlobe: false,
             },
             btnsPosition: {
               x: "12/9/9",
@@ -245,6 +246,11 @@ export default {
           layout: { x: 0, y: 1, w: 3, h: 6 },
           widget: {
             name: "EodashLayerControl",
+            properties: {
+              cssVars: {
+                "--list-padding": "1rem",
+              },
+            },
           },
         },
         {
@@ -272,7 +278,7 @@ export default {
               ? {
                   id: "Datepicker",
                   type: "internal",
-                  layout: { x: 4, y: 7, w: 4, h: 5 },
+                  layout: { x: 4, y: 6, w: 4, h: 6 },
                   title: "Date",
                   widget: {
                     name: "EodashDatePicker",
@@ -288,7 +294,7 @@ export default {
         },
         {
           defineWidget: (selectedSTAC) =>
-            selectedSTAC?.links.some((l) => l.rel === "service")
+            window.eodashStore.actions.includesProcess(selectedSTAC)
               ? {
                   id: "Processes",
                   type: "internal",
@@ -299,6 +305,18 @@ export default {
                   },
                 }
               : null,
+        },
+        {
+          defineWidget: () =>
+            window.eodashStore.actions.shouldShowChartWidget() && {
+              id: "ProcessResultChart",
+              type: "internal",
+              title: "Chart",
+              layout: { x: 0, y: 0, w: 12, h: 8 },
+              widget: {
+                name: "EodashChart",
+              },
+            },
         },
       ],
     },
@@ -337,6 +355,7 @@ export default {
               searchParams: {
                 countrycode: "at",
               },
+              enableGlobe: false,
             },
             btnsPosition: {
               x: "12/9/9",
@@ -396,6 +415,11 @@ export default {
           layout: { x: 0, y: 1, w: 3, h: 6 },
           widget: {
             name: "EodashLayerControl",
+            properties: {
+              cssVars: {
+                "--list-padding": "1rem"
+              },
+            },
           },
         },
         {
@@ -407,12 +431,15 @@ export default {
             name: "EodashLayerControl",
             properties: {
               map: "second",
+              cssVars: {
+                "--list-padding": "1rem"
+              },
             },
           },
         },
         {
           defineWidget: (selectedSTAC) =>
-            selectedSTAC?.links.some((l) => l.rel === "service")
+            window.eodashStore.actions.includesProcess(selectedSTAC)
               ? {
                   id: "Processes",
                   type: "internal",
@@ -425,12 +452,27 @@ export default {
               : null,
         },
         {
+          defineWidget: (_, updatedCompareStac) =>
+            window.eodashStore.actions.includesProcess(updatedCompareStac, true) && {
+              id: "CompareMapProcess",
+              type: "internal",
+              title: "Processes",
+              layout: { x: 9, y: 7, w: 3, h: 5 },
+              widget: {
+                name: "EodashProcess",
+                properties: {
+                  enableCompare: true,
+                },
+              },
+            },
+        },
+        {
           defineWidget: (selectedSTAC) => {
             return selectedSTAC
               ? {
                   id: "Datepicker",
                   type: "internal",
-                  layout: { x: 5, y: 8, w: 2, h: 4 },
+                  layout: { x: 4, y: 6, w: 4, h: 6 },
                   title: "Date",
                   widget: {
                     name: "EodashDatePicker",
@@ -443,6 +485,33 @@ export default {
                 }
               : null;
           },
+        },
+        {
+          defineWidget: () =>
+            window.eodashStore.actions.shouldShowChartWidget() && {
+              id: "ProcessResultChart",
+              type: "internal",
+              title: "Chart",
+              layout: { x: 0, y: 0, w: 6, h: 8 },
+              widget: {
+                name: "EodashChart",
+              },
+            },
+        },
+        {
+          defineWidget: () =>
+            window.eodashStore.actions.shouldShowChartWidget(true) && {
+              id: "ProcessResultChartCompare",
+              type: "internal",
+              title: "Compare Chart",
+              layout: { x: 6, y: 0, w: 6, h: 8 },
+              widget: {
+                name: "EodashChart",
+                properties: {
+                  enableCompare: true,
+                },
+              },
+            },
         },
       ],
     },
