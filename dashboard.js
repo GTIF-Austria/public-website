@@ -265,8 +265,13 @@ export default {
                   widget: {
                     name: "EodashStacInfo",
                     properties: {
-                      showIndicatorsBtn: false,
-                      showLayoutSwitcher: false,
+                      body: [
+                        "satellite",
+                        "sensor",
+                        "insituSources",
+                        "otherSources",
+                        "extent",
+                      ],
                     },
                   },
                 }
