@@ -128,7 +128,7 @@ export default {
                       footer: [],
                       body: ["description"],
                       styleOverride: "",
-                      featured: [],
+                      featured: ["providers"],
                     },
                   },
                 }
@@ -265,13 +265,8 @@ export default {
                   widget: {
                     name: "EodashStacInfo",
                     properties: {
-                      body: [
-                        "satellite",
-                        "sensor",
-                        "insituSources",
-                        "otherSources",
-                        "extent",
-                      ],
+                      body: ["description"],
+                      featured: ["providers"],
                     },
                   },
                 }
