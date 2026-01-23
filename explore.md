@@ -31,9 +31,6 @@ layout: false
                     .v-btn.v-theme--dashboardTheme.text-primary.v-btn--density-default.rounded-xl.v-btn--size-default.v-btn--variant-text.text-none.text-body-2 {
                     color: #000 !important;
                     }
-                    .datePicker {
-                        opacity: 0 !important;
-                    }
                 `;
                 dash.shadowRoot.appendChild(style);
             }
