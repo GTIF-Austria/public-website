@@ -310,26 +310,6 @@ export default {
             },
         },
         {
-          defineWidget: (selectedSTAC) => {
-            return selectedSTAC
-              ? {
-                  id: "Datepicker",
-                  type: "internal",
-                  layout: { x: 4, y: 6, w: 4, h: 6 },
-                  title: "Date",
-                  widget: {
-                    name: "EodashDatePicker",
-                    properties: {
-                      hintText: `<b>Hint:</b> closest available date is displayed <br />
-                                  on map (see Analysis Layers)`,
-                      toggleCalendar: true,
-                    },
-                  },
-                }
-              : null;
-          },
-        },
-        {
           defineWidget: () =>
             window.eodashStore.actions.shouldShowChartWidget() && {
               id: "ProcessResultChart",
