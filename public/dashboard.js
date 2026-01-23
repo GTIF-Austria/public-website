@@ -68,7 +68,7 @@ export default {
           widget: {
             name: "EodashTools",
             properties: {
-              indicatorBtnText: "Select dataset",
+              indicatorBtnText: "Select capability",
               showLayoutSwitcher: false,
               itemFilterConfig: {
                 resultType: "cards",
