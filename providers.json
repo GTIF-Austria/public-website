@@ -4,7 +4,7 @@
     "Description": "AEA - Austrian Energy Agency is a government-affiliated organization in Austria focused on advancing the country's energy policy and promoting sustainable energy practices. Established in 1977, the AEA operates as a center for expertise in energy technologies and policies. Focus areas are renewable energy development (solar, wind, hydro, and biomass); energy efficiency measures in buildings and industry; and climate protection and reducing greenhouse gas emissions.",
     "Logo": "https://github.com/GTIF-Austria/public-assets/blob/main/logos/aea.jpg?raw=true"
   },
-  "AEE Intec": {
+  "AEE INTEC": {
     "Url": "https://www.aee-intec.at/",
     "Description": "AEE – Institut für Nachhaltige Technologien, founded in 1988, is today one of Europe's leading institutes for applied research in the field of renewable energy and resource efficiency. Within its three target groups – Buildings, Cities & Networks, and Industrial Systems – and three technological working groups – Renewable Energies, Thermal Storage, and Water and Process Technologies – the range of R&D projects carried out extends from fundamental research projects to the implementation of demonstration plants.",
     "Logo": "https://github.com/GTIF-Austria/public-assets/blob/main/logos/aee_intec.jpg?raw=true"
@@ -160,6 +160,7 @@
     "Logo": "https://github.com/GTIF-Austria/public-assets/blob/main/logos/z_gis.jpg?raw=true"
   }
 }
+
 
 
 
