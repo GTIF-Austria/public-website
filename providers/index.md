@@ -19,7 +19,7 @@ layout: page
   const narratives = ref([]);
 
   const getIndicatorsForProvider = (providerKey) => indicators.value.filter(i => i.providers?.includes(providerKey));
-  const getNarrativesForProvider = (providerKey) => narratives.value.filter(n => n.provider === providerKey);
+  const getNarrativesForProvider = (providerKey) => narratives.value.filter(n => n.provider?.includes(providerKey));
 
   onMounted(async () => {
     const cacheBuster = `?t=${new Date().getTime()}`; // Add a timestamp for cache busting
@@ -44,8 +44,8 @@ layout: page
       title: provider.id,
       content: `
         ${provider.Description}${provider['NoR Offering'] ? `<br /><br /><a class="primary-text" href='${provider['NoR Offering']}' target='_blank'>NoR Offering</a>` : ''}
-        ${provider.narratives?.length ? `<br /><br />Narratives:<br />${provider.narratives.map(n => `<a class="primary-text" href='${withBase(`/narratives/${n.file.split(/\/|\\/).pop().replace('.md', '')}`)}'>${n.title}</a>`).join('<br />')}` : ''}
-        ${provider.indicators?.length ? `<br /><br />Datasets:<br /> ${provider.indicators.map(i => `<a class="primary-text" href='${withBase(`/explore/?indicator=${i.code}`)}'>${i.title}</a>`).join('<br />')}` : ''}
+        ${provider.narratives?.length ? `<br /><br />Narratives:<br />${provider.narratives.map(n => `<a class="primary-text" href='${withBase(`/narratives/${n.file.split(/\/|\\/).pop().replace('.md', '')}`)}'>· ${n.title}</a>`).join('<br />')}` : ''}
+        ${provider.indicators?.length ? `<br /><br />Datasets:<br /> ${provider.indicators.map(i => `<a class="primary-text" href='${withBase(`/explore/?indicator=${i.id}`)}'>· ${i.title}</a>`).join('<br />')}` : ''}
       `,
       icon: {
         html: `<img src="${provider.Logo}" alt="${provider.id} logo" style="height: 100%; width: auto" />`,
@@ -59,3 +59,15 @@ layout: page
   })
 </script>
 
+<style>
+.card-wrapper {
+  flex: 0 0 calc(50% - 16px)!important;
+}
+
+@media (max-width: 1280px) {
+  .card-wrapper {
+    flex: 0 0 calc(50% - 12px)!important;
+  }
+}
+
+</style>
