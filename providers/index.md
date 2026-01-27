@@ -59,15 +59,4 @@ layout: page
   })
 </script>
 
-<style>
-.card-wrapper {
-  flex: 0 0 calc(50% - 16px)!important;
-}
 
-@media (max-width: 1280px) {
-  .card-wrapper {
-    flex: 0 0 calc(50% - 12px)!important;
-  }
-}
-
-</style>
