@@ -108,7 +108,7 @@ export default {
                     name: "EodashStacInfo",
                     properties: {
                       body: ["description"],
-                      featured: ["providers"],
+                      featured: ["providers", "assets"],
                     },
                   },
                 }
