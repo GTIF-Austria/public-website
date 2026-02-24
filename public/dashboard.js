@@ -1,3 +1,9 @@
+function isMobile() {
+  // only on app start but good for now
+  const minWidth = 768;
+  return window.innerWidth < minWidth || screen.width < minWidth;
+}
+
 export default {
   id: "GTIF-Austria Dashboard",
   stacEndpoint:
@@ -74,9 +80,31 @@ export default {
                 resultType: "cards",
                 subTitleProperty: "subtitle",
                 aggregateResults: "collection_group",
+                filterProperties: [
+                  {
+                    keys: ["title", "description"],
+                    title: "Search",
+                    type: "text",
+                    placeholder: "Type to search...",
+                    expanded: true,
+                  },
+                  {
+                    key: "collection_group",
+                    title: "Topic",
+                    type: "multiselect",
+                    expanded: true,
+                    placeholder: "Type to search...",
+                    inline: false,
+                  }
+                ],
                 imageProperty: "thumbnail",
-                style: {
+                style: isMobile() ?
+                {
                   "--form-flex-direction": "row",
+                  "--filter-display": "none"
+                }:
+                {
+                  "--form-flex-direction": "row"
                 },
               },
             },
