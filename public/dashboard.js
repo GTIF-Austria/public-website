@@ -4,6 +4,39 @@ function isMobile() {
   return window.innerWidth < minWidth || screen.width < minWidth;
 }
 
+const itemFilterConfig = {
+  resultType: "cards",
+  subTitleProperty: "subtitle",
+  aggregateResults: "collection_group",
+  filterProperties: [
+    {
+      keys: ["title", "description"],
+      title: "Search",
+      type: "text",
+      placeholder: "Type to search...",
+      expanded: true,
+    },
+    {
+      key: "collection_group",
+      title: "Topic",
+      type: "multiselect",
+      expanded: true,
+      placeholder: "Type to search...",
+      inline: false,
+    }
+  ],
+  imageProperty: "thumbnail",
+  style: isMobile() ?
+  {
+    "--form-flex-direction": "row",
+    "--filter-display": "none"
+  }:
+  {
+    "--form-flex-direction": "row",
+    "--select-filter-max-items": 10,
+  },
+};
+
 export default {
   id: "GTIF-Austria Dashboard",
   stacEndpoint:
@@ -48,38 +81,7 @@ export default {
             btns: {
               enableExportMap: true,
               enableCompareIndicators: {
-                itemFilterConfig: {
-                  resultType: "cards",
-                  subTitleProperty: "subtitle",
-                  aggregateResults: "collection_group",
-                  filterProperties: [
-                    {
-                      keys: ["title", "description"],
-                      title: "Search",
-                      type: "text",
-                      placeholder: "Type to search...",
-                      expanded: true,
-                    },
-                    {
-                      key: "collection_group",
-                      title: "Topic",
-                      type: "multiselect",
-                      expanded: true,
-                      placeholder: "Type to search...",
-                      inline: false,
-                    }
-                  ],
-                  imageProperty: "thumbnail",
-                  style: isMobile() ?
-                  {
-                    "--form-flex-direction": "row",
-                    "--filter-display": "none"
-                  }:
-                  {
-                    "--form-flex-direction": "row",
-                    "--select-filter-max-items": 10,
-                  },
-                },
+                itemFilterConfig,
               },
               enableSearch: true,
               searchParams: {
@@ -109,38 +111,7 @@ export default {
             properties: {
               indicatorBtnText: "Select capability",
               showLayoutSwitcher: false,
-              itemFilterConfig: {
-                resultType: "cards",
-                subTitleProperty: "subtitle",
-                aggregateResults: "collection_group",
-                filterProperties: [
-                  {
-                    keys: ["title", "description"],
-                    title: "Search",
-                    type: "text",
-                    placeholder: "Type to search...",
-                    expanded: true,
-                  },
-                  {
-                    key: "collection_group",
-                    title: "Topic",
-                    type: "multiselect",
-                    expanded: true,
-                    placeholder: "Type to search...",
-                    inline: false,
-                  }
-                ],
-                imageProperty: "thumbnail",
-                style: isMobile() ?
-                {
-                  "--form-flex-direction": "row",
-                  "--filter-display": "none"
-                }:
-                {
-                  "--form-flex-direction": "row",
-                  "--select-filter-max-items": 10,
-                },
-              },
+              itemFilterConfig,
             },
           },
         },
@@ -260,38 +231,7 @@ export default {
             name: "EodashTools",
             properties: {
               showLayoutSwitcher: false,
-              itemFilterConfig: {
-                filterProperties: [
-                  {
-                    keys: ["title", "description"],
-                    title: "Search",
-                    type: "text",
-                    placeholder: "Type to search...",
-                    expanded: true,
-                  },
-                  {
-                    key: "collection_group",
-                    title: "Topic",
-                    type: "multiselect",
-                    expanded: true,
-                    placeholder: "Type to search...",
-                    inline: false,
-                  }
-                ],
-                aggregateResults: "collection_group",
-                resultType: "cards",
-                subTitleProperty: "subtitle",
-                imageProperty: "thumbnail",
-                style: isMobile() ?
-                {
-                  "--form-flex-direction": "row",
-                  "--filter-display": "none"
-                }:
-                {
-                  "--form-flex-direction": "row",
-                  "--select-filter-max-items": 10,
-                },
-              },
+              itemFilterConfig,
             },
           },
         },
@@ -305,41 +245,11 @@ export default {
             name: "EodashTools",
             properties: {
               showLayoutSwitcher: false,
-              indicatorBtnText: "Select an indicator to compare",
+              indicatorBtnText: "Select compare indicator",
               itemFilterConfig: {
+                ...itemFilterConfig,
                 enableCompare: true,
                 filtersTitle: "Select an indicator to compare",
-                aggregateResults: "collection_group",
-                resultType: "cards",
-                subTitleProperty: "subtitle",
-                imageProperty: "thumbnail",
-                style: isMobile() ?
-                {
-                  "--form-flex-direction": "row",
-                  "--filter-display": "none"
-                }:
-                {
-                  "--form-flex-direction": "row",
-                  "--select-filter-max-items": 10,
-                },
-                resultsTitle: "",
-                filterProperties: [
-                  {
-                    keys: ["title", "description"],
-                    title: "Search",
-                    type: "text",
-                    placeholder: "Type to search...",
-                    expanded: true,
-                  },
-                  {
-                    key: "collection_group",
-                    title: "Topic",
-                    type: "multiselect",
-                    expanded: true,
-                    placeholder: "Type to search...",
-                    inline: false,
-                  }
-                ],
               },
             },
           },
