@@ -47,7 +47,40 @@ export default {
             zoomToExtent: true,
             btns: {
               enableExportMap: true,
-              enableCompareIndicators: true,
+              enableCompareIndicators: {
+                itemFilterConfig: {
+                  resultType: "cards",
+                  subTitleProperty: "subtitle",
+                  aggregateResults: "collection_group",
+                  filterProperties: [
+                    {
+                      keys: ["title", "description"],
+                      title: "Search",
+                      type: "text",
+                      placeholder: "Type to search...",
+                      expanded: true,
+                    },
+                    {
+                      key: "collection_group",
+                      title: "Topic",
+                      type: "multiselect",
+                      expanded: true,
+                      placeholder: "Type to search...",
+                      inline: false,
+                    }
+                  ],
+                  imageProperty: "thumbnail",
+                  style: isMobile() ?
+                  {
+                    "--form-flex-direction": "row",
+                    "--filter-display": "none"
+                  }:
+                  {
+                    "--form-flex-direction": "row",
+                    "--select-filter-max-items": 10,
+                  },
+                },
+              },
               enableSearch: true,
               searchParams: {
                 countrycode: "at",
@@ -104,7 +137,8 @@ export default {
                   "--filter-display": "none"
                 }:
                 {
-                  "--form-flex-direction": "row"
+                  "--form-flex-direction": "row",
+                  "--select-filter-max-items": 10,
                 },
               },
             },
@@ -225,12 +259,37 @@ export default {
           widget: {
             name: "EodashTools",
             properties: {
-              layoutTarget: "light",
-              layoutIcon:
-                "M2,5V19H8V5H2M9,5V10H15V5H9M16,5V14H22V5H16M9,11V19H15V11H9M16,15V19H22V15H16Z",
+              showLayoutSwitcher: false,
               itemFilterConfig: {
-                cssVars: {
+                filterProperties: [
+                  {
+                    keys: ["title", "description"],
+                    title: "Search",
+                    type: "text",
+                    placeholder: "Type to search...",
+                    expanded: true,
+                  },
+                  {
+                    key: "collection_group",
+                    title: "Topic",
+                    type: "multiselect",
+                    expanded: true,
+                    placeholder: "Type to search...",
+                    inline: false,
+                  }
+                ],
+                aggregateResults: "collection_group",
+                resultType: "cards",
+                subTitleProperty: "subtitle",
+                imageProperty: "thumbnail",
+                style: isMobile() ?
+                {
                   "--form-flex-direction": "row",
+                  "--filter-display": "none"
+                }:
+                {
+                  "--form-flex-direction": "row",
+                  "--select-filter-max-items": 10,
                 },
               },
             },
@@ -249,12 +308,38 @@ export default {
               indicatorBtnText: "Select an indicator to compare",
               itemFilterConfig: {
                 enableCompare: true,
-                // resultsTitle:"Select an indicator to compare",
                 filtersTitle: "Select an indicator to compare",
-                // filterProperties: [],
-                cssVars: {
+                aggregateResults: "collection_group",
+                resultType: "cards",
+                subTitleProperty: "subtitle",
+                imageProperty: "thumbnail",
+                style: isMobile() ?
+                {
                   "--form-flex-direction": "row",
+                  "--filter-display": "none"
+                }:
+                {
+                  "--form-flex-direction": "row",
+                  "--select-filter-max-items": 10,
                 },
+                resultsTitle: "",
+                filterProperties: [
+                  {
+                    keys: ["title", "description"],
+                    title: "Search",
+                    type: "text",
+                    placeholder: "Type to search...",
+                    expanded: true,
+                  },
+                  {
+                    key: "collection_group",
+                    title: "Topic",
+                    type: "multiselect",
+                    expanded: true,
+                    placeholder: "Type to search...",
+                    inline: false,
+                  }
+                ],
               },
             },
           },
