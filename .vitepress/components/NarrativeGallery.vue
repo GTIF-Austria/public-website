@@ -2,6 +2,7 @@
 import { ref, onMounted } from "vue";
 import { withBase, useRouter } from "vitepress";
 // import { trackEvent } from "@eox/pages-theme-eox/src/helpers.js";
+const cacheBuster = `?t=${new Date().getTime()}`; // Add a timestamp for cache busting
 
 const router = useRouter();
 const items = ref([]);
@@ -24,7 +25,7 @@ const filterProps = [
 onMounted(async () => {
   try {
     const response = await fetch(
-      "https://gtif-austria.github.io/public-narratives/narratives.json",
+      `"https://gtif-austria.github.io/public-narratives/narratives.json${cacheBuster}`,
     );
     const results = await response.json();
     results.forEach((res) => {
