@@ -25,7 +25,7 @@ const filterProps = [
 onMounted(async () => {
   try {
     const response = await fetch(
-      `"https://gtif-austria.github.io/public-narratives/narratives.json${cacheBuster}`,
+      `https://gtif-austria.github.io/public-narratives/narratives.json${cacheBuster}`,
     );
     const results = await response.json();
     results.forEach((res) => {
