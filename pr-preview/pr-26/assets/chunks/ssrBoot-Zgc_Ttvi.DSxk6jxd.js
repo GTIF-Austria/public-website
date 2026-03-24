@@ -1,0 +1,1 @@
+import{v as t,E as e,S as s,an as n}from"./framework.CRhf-BCr.js";function i(){const o=e(!1);return t(()=>{window.requestAnimationFrame(()=>{o.value=!0})}),{ssrBootStyles:n(()=>o.value?void 0:{transition:"none !important"}),isBooted:s(o)}}export{i as u};
