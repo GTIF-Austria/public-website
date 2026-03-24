@@ -91,7 +91,7 @@ export default {
               enableGlobe: false,
             },
             btnsPosition: {
-              x: "12/9/9",
+              x: "12/9/10",
               y: 1,
               gap: 32
             },
@@ -214,7 +214,7 @@ export default {
               enableGlobe: false,
             },
             btnsPosition: {
-              x: "12/9/9",
+              x: "12/9/10",
               y: 1,
               gap: 32
             },
