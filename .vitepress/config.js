@@ -3,11 +3,11 @@ import baseConfig from "@eox/pages-theme-eox/config";
 
 export default defineConfig({
   extends: baseConfig("gtif-austria"),
-  vite:{
-    envPrefix:["VITE_", "EODASH_"],
-    server:{
+  vite: {
+    envPrefix: ["VITE_", "EODASH_"],
+    server: {
       allowedHosts: true,
-    }
+    },
   },
   // Change the page config here
   themeConfig: {
