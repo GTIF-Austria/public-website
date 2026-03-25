@@ -23,18 +23,18 @@ const itemFilterConfig = {
       expanded: true,
       placeholder: "Type to search...",
       inline: false,
-    }
+    },
   ],
   imageProperty: "thumbnail",
-  style: isMobile() ?
-  {
-    "--form-flex-direction": "row",
-    "--filter-display": "none"
-  }:
-  {
-    "--form-flex-direction": "row",
-    "--select-filter-max-items": 10,
-  },
+  style: isMobile()
+    ? {
+        "--form-flex-direction": "row",
+        "--filter-display": "none",
+      }
+    : {
+        "--form-flex-direction": "row",
+        "--select-filter-max-items": 10,
+      },
 };
 
 export default {
@@ -93,7 +93,7 @@ export default {
             btnsPosition: {
               x: "12/9/10",
               y: 1,
-              gap: 32
+              gap: 32,
             },
             center: [13.3587, 47.4706],
             zoom: 7,
@@ -216,7 +216,7 @@ export default {
             btnsPosition: {
               x: "12/9/10",
               y: 1,
-              gap: 32
+              gap: 32,
             },
           },
         },
@@ -263,7 +263,7 @@ export default {
             name: "EodashLayerControl",
             properties: {
               cssVars: {
-                "--list-padding": "1rem"
+                "--list-padding": "1rem",
               },
             },
           },
@@ -278,7 +278,7 @@ export default {
             properties: {
               map: "second",
               cssVars: {
-                "--list-padding": "1rem"
+                "--list-padding": "1rem",
               },
             },
           },
@@ -299,7 +299,10 @@ export default {
         },
         {
           defineWidget: (_, updatedCompareStac) =>
-            window.eodashStore.actions.includesProcess(updatedCompareStac, true) && {
+            window.eodashStore.actions.includesProcess(
+              updatedCompareStac,
+              true,
+            ) && {
               id: "CompareMapProcess",
               type: "internal",
               title: "Processes",
