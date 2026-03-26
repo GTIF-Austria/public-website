@@ -27,22 +27,35 @@ jobs:
       pages: write
       pull-requests: write
     steps:
+      # This checks out "main" first for Check for changes step
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+      - name: Check for changes to prevent modification of build scripts
+        uses: dorny/paths-filter@de90cc6fb38fc0963ad72b210f1f284cd68cea36 # v3
+        id: filter
+        with:
+          # Define what is "unsafe" to change
+          filters: |
+            unsafe_files:
+              - 'package.json'
+              - 'package-lock.json'
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
         with:
           fetch-depth: 0 # Not needed if lastUpdated is not enabled
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
           node-version: 20
           cache: npm
       - name: Setup Pages
-        uses: actions/configure-pages@v4
-      - name: Install dependencies
+        uses: actions/configure-pages@1f0c5cde4bc74cd7e1254d0cb4de8d49e9068c7d # v4
+      - if: steps.filter.outputs.unsafe_files == 'false'
+        name: Install dependencies
         run: npm ci
-      - name: Build with VitePress with correct base
+      - if: steps.filter.outputs.unsafe_files == 'false'
+        name: Build with VitePress with correct base
         run: npm run build -- --base /pr-preview/pr-${{ github.event.number }}/
       - name: Deploy preview to Github Pages
-        uses: rossjrw/pr-preview-action@v1 #v2 should be coming soon
+        uses: rossjrw/pr-preview-action@v1
         with:
           source-dir: .vitepress/dist
