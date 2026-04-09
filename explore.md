@@ -1,6 +1,7 @@
 ---
 layout: page
 footer: false
+feedback: false
 ---
 
 <script setup>
