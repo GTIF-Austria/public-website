@@ -34,3 +34,8 @@ header {
 .news-banner {
   top: calc(100dvh - 40px) !important;
 }
+
+eox-feedback-button {
+  position: fixed;
+  z-index: 100;
+}
