@@ -3,6 +3,8 @@ function isMobile() {
   const minWidth = 768;
   return window.innerWidth < minWidth || screen.width < minWidth;
 }
+const cacheBuster = `?t=${new Date().getTime()}`; // Add a timestamp for cache busting
+const feedbackSchema = await fetch(`/configs/feedback_schema.json${cacheBuster}`).then(res => res.json());
 
 const itemFilterConfig = {
   resultType: "cards",
@@ -52,6 +54,11 @@ export default {
       },
     },
     footerText: "GTIF-Austria Dashboard",
+    feedback: {
+      endpoint:
+        "https://git-issue-creator.baltic-gtif.hub-otc.eox.at/create-issue?repo=1021",
+      schema: feedbackSchema,
+    },
   },
   templates: {
     light: {

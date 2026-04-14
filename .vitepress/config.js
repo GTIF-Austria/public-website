@@ -1,5 +1,6 @@
 import { defineConfig } from "vitepress";
 import baseConfig from "@eox/pages-theme-eox/config";
+import feedbackSchema from "../public/configs/feedback_schema.json";
 
 export default defineConfig({
   extends: baseConfig("gtif-austria"),
@@ -11,6 +12,12 @@ export default defineConfig({
   },
   // Change the page config here
   themeConfig: {
+    feedback: {
+      endpoint:
+        "https://git-issue-creator.gtif-austria.hub-otc.eox.at/create-issue?repo=1021",
+      schema: feedbackSchema,
+      position: "bottom-right",
+    },
     nav: [
       { text: "Home", link: "/" },
       { text: "Narratives", link: "/narratives", activeMatch: "/narratives/" },
