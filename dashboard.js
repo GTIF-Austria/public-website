@@ -8,6 +8,7 @@ const feedbackSchema = await fetch(`/configs/feedback_schema.json${cacheBuster}`
 
 const itemFilterConfig = {
   resultType: "cards",
+  filtersTitle: "Capabilities",
   subTitleProperty: "subtitle",
   aggregateResults: "collection_group",
   filterProperties: [
@@ -88,7 +89,11 @@ export default {
             btns: {
               enableExportMap: true,
               enableCompareIndicators: {
-                itemFilterConfig,
+                itemFilterConfig: {
+                  ...itemFilterConfig,
+                  enableCompare: true,
+                  filtersTitle: "Select a capability to compare",
+                },
               },
               enableSearch: true,
               searchParams: {
@@ -237,6 +242,7 @@ export default {
           widget: {
             name: "EodashTools",
             properties: {
+              indicatorBtnText: "Select capability",
               showLayoutSwitcher: false,
               itemFilterConfig,
             },
@@ -244,7 +250,7 @@ export default {
         },
         // compare indicators
         {
-          id: "Compare Indicators Tools",
+          id: "Compare Capabilities Tools",
           type: "internal",
           title: "Tools",
           layout: { x: "9/9/10", y: 0, w: "3/3/2", h: 2 },
@@ -252,11 +258,11 @@ export default {
             name: "EodashTools",
             properties: {
               showLayoutSwitcher: false,
-              indicatorBtnText: "Select compare indicator",
+              indicatorBtnText: "Select compare capability",
               itemFilterConfig: {
                 ...itemFilterConfig,
                 enableCompare: true,
-                filtersTitle: "Select an indicator to compare",
+                filtersTitle: "Select a capability to compare",
               },
             },
           },
