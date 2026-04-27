@@ -153,7 +153,11 @@ export default {
                     name: "EodashStacInfo",
                     properties: {
                       body: ["description"],
-                      featured: ["providers", "assets"],
+                      featured: [
+                        "providers",
+                        { key: "eodash:narratives" },
+                        { key: "assets", filter: (asset) => !(asset?.roles?.includes("story"))}
+                      ],
                     },
                   },
                 }
