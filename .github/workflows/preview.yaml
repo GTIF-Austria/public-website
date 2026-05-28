@@ -19,7 +19,7 @@ permissions:
 
 jobs:
   deploy-preview:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     env:
       EODASH_OPENCAGE: ${{ secrets.EODASH_OPENCAGE }}
     permissions:
@@ -28,9 +28,9 @@ jobs:
       pull-requests: write
     steps:
       # This checks out "main" first for Check for changes step
-      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
       - name: Check for changes to prevent modification of build scripts
-        uses: dorny/paths-filter@de90cc6fb38fc0963ad72b210f1f284cd68cea36 # v3
+        uses: dorny/paths-filter@fbd0ab8f3e69293af611ebaee6363fc25e6d187d # v4
         id: filter
         with:
           # Define what is "unsafe" to change
@@ -39,11 +39,13 @@ jobs:
               - 'package.json'
               - 'package-lock.json'
       - name: Checkout
-        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
         with:
           fetch-depth: 0 # Not needed if lastUpdated is not enabled
       - name: Setup Node
-        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6
+        with:
+          node-version: 24
         with:
           node-version: 20
           cache: npm
@@ -56,6 +58,6 @@ jobs:
         name: Build with VitePress with correct base
         run: npm run build -- --base /pr-preview/pr-${{ github.event.number }}/
       - name: Deploy preview to Github Pages
-        uses: rossjrw/pr-preview-action@v1
+        uses: rossjrw/pr-preview-action@ffa7509e91a3ec8dfc2e5536c4d5c1acdf7a6de9 # v1
         with:
           source-dir: .vitepress/dist
