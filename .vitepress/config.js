@@ -25,7 +25,7 @@ export default defineConfig({
       { text: "Providers", link: "/providers", activeMatch: "/providers/" },
       {
         text: "Log in",
-        link: "https://dashboard.gtif-austria.gtif.eox.at",
+        link: "https://workspace.gtif-austria.hub-otc.eox.at",
         action: "alt",
       },
     ],

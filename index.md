@@ -105,7 +105,7 @@ This Website also gives access to interactive graphical user interfaces (WebGUIs
 
 The Capabilities accessible on this Website are of Austrian provenance or with a geographical coverage of Austrian territories. Mostly, they have been developed and coordinated under the Digital Twin Austria GTIF programme. Some are contributions to international GTIF programmes organized via projects of the European Space Agency.
 
-All relevant GTIF Austria initiatives are invited to contribute their Capabilities using the tools available in the [GTIF Austria Workspace](https://dashboard.gtif-austria.gtif.eox.at/). Presently, the Workspace includes the Data Editor and Narrative Editor applications.
+All relevant GTIF Austria initiatives are invited to contribute their Capabilities using the tools available in the [GTIF Austria Workspace](https://workspace.gtif-austria.hub-otc.eox.at/). Presently, the Workspace includes the Data Editor and Narrative Editor applications.
 
 ### Public and Commercial GTIF
 
