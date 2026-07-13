@@ -49,7 +49,7 @@ export default {
     name: "GTIF-Austria Dashboard",
     theme: {
       colors: {
-        primary: "#fff",
+        primary: "#00AE9D",
         secondary: "#fff",
         surface: "#fff",
       },
