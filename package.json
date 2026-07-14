@@ -13,7 +13,7 @@
     "format": "npx prettier --write **/*.{js,css,vue}"
   },
   "dependencies": {
-    "@eodash/eodash": "https://pkg.pr.new/eodash/eodash/@eodash/eodash@3402a2d",
+    "@eodash/eodash": "^5.8.0",
     "@eox/storytelling": "^1.10.1"
   }
 }
