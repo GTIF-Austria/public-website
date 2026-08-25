@@ -220,23 +220,6 @@ const onImageError = (e) => {
               >
             </span>
           </div>
-
-          <div class="pv-card-arrow-wrap">
-            <svg
-              class="pv-action-arrow"
-              viewBox="0 0 24 24"
-              width="14"
-              height="14"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <line x1="5" y1="12" x2="19" y2="12"></line>
-              <polyline points="12 5 19 12 12 19"></polyline>
-            </svg>
-          </div>
         </div>
       </div>
     </div>
@@ -729,7 +712,7 @@ const onImageError = (e) => {
   margin: 0 !important;
   padding: 0 !important;
   display: -webkit-box !important;
-  -webkit-line-clamp: 2 !important;
+  -webkit-line-clamp: 5 !important;
   -webkit-box-orient: vertical !important;
   overflow: hidden !important;
   text-overflow: ellipsis !important;
@@ -742,7 +725,6 @@ const onImageError = (e) => {
   justify-content: space-between !important;
   gap: 8px !important;
   padding-top: 8px !important;
-  border-top: 1px solid var(--outline-variant, #edf2f7) !important;
   border-left: none !important;
   border-right: none !important;
   border-bottom: none !important;
@@ -793,19 +775,9 @@ const onImageError = (e) => {
   border: 1px solid var(--outline-variant, #e2e8f0) !important;
 }
 
-.pv-card-arrow-wrap {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  color: var(--primary, #004170) !important;
-  flex-shrink: 0 !important;
-  opacity: 0.8 !important;
-  transition:
-    transform 0.2s ease,
-    opacity 0.2s ease;
-}
 
-.pv-card:hover .pv-card-arrow-wrap {
+
+.pv-card:hover {
   opacity: 1 !important;
   transform: translateX(3px) !important;
 }
@@ -1233,7 +1205,6 @@ const onImageError = (e) => {
 /* Modal Footer */
 .pv-modal-footer {
   padding: 16px 24px !important;
-  border-top: 1px solid var(--outline-variant, #e5e7eb) !important;
   background: var(--surface-container-lowest, #ffffff) !important;
   display: flex !important;
   justify-content: flex-end !important;
