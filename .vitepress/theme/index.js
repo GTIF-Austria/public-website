@@ -1,6 +1,7 @@
 import EOX from "@eox/pages-theme-eox";
 import "./custom.css";
 import NarrativeGallery from "../components/NarrativeGallery.vue";
+import ProvidersGallery from "../components/ProvidersGallery.vue";
 
 // https://vitepress.dev/guide/custom-theme#theme-interface
 export default {
@@ -9,6 +10,7 @@ export default {
     EOX.enhanceApp({ app, router, siteData });
 
     app.component("NarrativeGallery", NarrativeGallery);
+    app.component("ProvidersGallery", ProvidersGallery);
 
     if (!import.meta.env.SSR) {
       await import("@eodash/eodash/webcomponent");
