@@ -18,6 +18,25 @@ hero:
       link: /explore
 ---
 
+
+<div class="news-item">
+  <div class="news-item-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 3v11"/>
+      <path d="m18 8-6 6-6-6"/>
+      <path d="M5 19h14"/>
+    </svg>
+  </div>
+  <div class="news-item-content">
+    <div class="title">
+      <a href="/providers">New tool for exploring the GTIF-Austria service providers - see the organizations and identify their contributions here</a>
+    </div>
+    <div class="details">
+   The GTIF-Austria capabilities portfolio is growing, so is the landscape of contributors who are actively promoting their services for climate roadmapping
+    </div>
+  </div>
+</div>
+
 <div class="news-item">
   <div class="news-item-icon">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
