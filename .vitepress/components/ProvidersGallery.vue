@@ -712,7 +712,7 @@ const onImageError = (e) => {
   margin: 0 !important;
   padding: 0 !important;
   display: -webkit-box !important;
-  -webkit-line-clamp: 5 !important;
+  -webkit-line-clamp: 4 !important;
   -webkit-box-orient: vertical !important;
   overflow: hidden !important;
   text-overflow: ellipsis !important;
