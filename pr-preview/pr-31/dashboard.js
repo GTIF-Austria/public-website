@@ -4,7 +4,9 @@ function isMobile() {
   return window.innerWidth < minWidth || screen.width < minWidth;
 }
 const cacheBuster = `?t=${new Date().getTime()}`; // Add a timestamp for cache busting
-const feedbackSchema = await fetch(`/configs/feedback_schema.json${cacheBuster}`).then(res => res.json());
+const feedbackSchema = await fetch(
+  `/configs/feedback_schema.json${cacheBuster}`,
+).then((res) => res.json());
 
 const itemFilterConfig = {
   resultType: "cards",
@@ -101,6 +103,7 @@ export default {
               },
               enableBackToPOIs: true,
               enableGlobe: false,
+              enableGeolocation: false,
             },
             btnsPosition: {
               x: "12/9/10",
@@ -156,7 +159,10 @@ export default {
                       featured: [
                         "providers",
                         { key: "eodash:narratives" },
-                        { key: "assets", filter: (asset) => !(asset?.roles?.includes("story"))}
+                        {
+                          key: "assets",
+                          filter: (asset) => !asset?.roles?.includes("story"),
+                        },
                       ],
                     },
                   },
@@ -228,6 +234,7 @@ export default {
                 countrycode: "at",
               },
               enableGlobe: false,
+              enableGeolocation: false,
             },
             btnsPosition: {
               x: "12/9/10",
@@ -275,7 +282,7 @@ export default {
           id: "Layers",
           type: "internal",
           title: "Layers",
-          layout: { x: 0, y: 1, w: "3/3/2", h: 10 },
+          layout: { x: 0, y: 1, w: "3/3/2", h: window.eodashStore.actions.includesProcess(selectedSTAC) ? 5 : 11 },
           widget: {
             name: "EodashLayerControl",
             properties: {
@@ -286,18 +293,22 @@ export default {
           },
         },
         {
-          id: "Layers Compare",
-          title: "Comparison Layers",
-          layout: { x: "9/9/10", y: 1, w: "3/3/2", h: 10 },
-          type: "internal",
-          widget: {
-            name: "EodashLayerControl",
-            properties: {
-              map: "second",
-              cssVars: {
-                "--list-padding": "1rem",
+          defineWidget: (selectedSTAC) => {
+            return {
+              id: "Layers Compare",
+              title: "Comparison Layers",
+              layout: { x: "9/9/10", y: 1, w: "3/3/2", h: window.eodashStore.actions.includesProcess(selectedSTAC) ? 5 : 11 },
+              type: "internal",
+              widget: {
+                name: "EodashLayerControl",
+                properties: {
+                  map: "second",
+                  cssVars: {
+                    "--list-padding": "1rem",
+                  },
+                },
               },
-            },
+            };
           },
         },
         {
