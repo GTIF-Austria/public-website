@@ -279,17 +279,28 @@ export default {
           },
         },
         {
-          id: "Layers",
-          type: "internal",
-          title: "Layers",
-          layout: { x: 0, y: 1, w: "3/3/2", h: window.eodashStore.actions.includesProcess(selectedSTAC) ? 5 : 11 },
-          widget: {
-            name: "EodashLayerControl",
-            properties: {
-              cssVars: {
-                "--list-padding": "1rem",
+          defineWidget: (selectedSTAC) => {
+            return {
+              id: "Layers",
+              type: "internal",
+              title: "Layers",
+              layout: {
+                x: 0,
+                y: 1,
+                w: "3/3/2",
+                h: window.eodashStore.actions.includesProcess(selectedSTAC)
+                  ? 5
+                  : 11,
               },
-            },
+              widget: {
+                name: "EodashLayerControl",
+                properties: {
+                  cssVars: {
+                    "--list-padding": "1rem",
+                  },
+                },
+              },
+            };
           },
         },
         {
@@ -297,7 +308,14 @@ export default {
             return {
               id: "Layers Compare",
               title: "Comparison Layers",
-              layout: { x: "9/9/10", y: 1, w: "3/3/2", h: window.eodashStore.actions.includesProcess(selectedSTAC) ? 5 : 11 },
+              layout: {
+                x: "9/9/10",
+                y: 1,
+                w: "3/3/2",
+                h: window.eodashStore.actions.includesProcess(selectedSTAC)
+                  ? 5
+                  : 11,
+              },
               type: "internal",
               widget: {
                 name: "EodashLayerControl",
