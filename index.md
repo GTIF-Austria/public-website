@@ -19,83 +19,20 @@ hero:
 ---
 
 
-<div class="news-item">
-  <div class="news-item-icon">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M12 3v11"/>
-      <path d="m18 8-6 6-6-6"/>
-      <path d="M5 19h14"/>
-    </svg>
-  </div>
-  <div class="news-item-content">
-    <div class="title">
-      <a href="/providers">New tool for exploring the GTIF-Austria service providers - see the organizations and identify their contributions here</a>
-    </div>
-    <div class="details">
-   The GTIF-Austria capabilities portfolio is growing, so is the landscape of contributors who are actively promoting their services for climate roadmapping
-    </div>
-  </div>
-</div>
+<NewsItem href="/providers">
+  <template #title>New tool for exploring the GTIF-Austria service providers - see the organizations and identify their contributions here</template>
+  <template #details>The GTIF-Austria capabilities portfolio is growing, so is the landscape of contributors who are actively promoting their services for climate roadmapping</template>
+</NewsItem>
 
-<div class="news-item">
-  <div class="news-item-icon">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M12 3v11"/>
-      <path d="m18 8-6 6-6-6"/>
-      <path d="M5 19h14"/>
-    </svg>
-  </div>
-  <div class="news-item-content">
-    <div class="title">
-      <a href="/assets/GTIF Technical Handbook.pdf" target="_blank">New starter information for providers of capabilities - the GTIF-Austria Technical Handbook - for download here</a>
-    </div>
-    <div class="details">
-   A reference guide for GTIF-Austria users. It also contains engineering insights about the platform architecture and its open-source software building blocks.
-    </div>
-  </div>
-</div>
+<NewsItem href="/assets/GTIF Technical Handbook.pdf" target="_blank">
+  <template #title>New starter information for providers of capabilities - the GTIF-Austria Technical Handbook - for download here</template>
+  <template #details>A reference guide for GTIF-Austria users. It also contains engineering insights about the platform architecture and its open-source software building blocks.</template>
+</NewsItem>
 
-<style>
-.news-item {
-  display: flex;
-  align-items: center;
-  padding: 24px;
-  border-radius: 16px;
-  margin-top: 24px;
-  margin-bottom: 24px;
-  border: 1px solid var(--vp-c-brand-2);
-  background: linear-gradient(145deg, var(--vp-c-bg-soft), var(--vp-c-bg));
-  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-  transition: all 0.3s ease;
-}
-.news-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
-}
-.news-item-icon {
-  margin-right: 24px;
-  color: var(--vp-c-brand-1);
-}
-.news-item-icon svg {
-  width: 32px;
-  height: 32px;
-}
-.news-item-content .title {
-  font-size: 18px;
-  font-weight: 700;
-  color: var(--vp-c-brand-1);
-}
-.news-item-content .title a {
-  text-decoration: none;
-  color: var(--vp-c-brand-1);
-}
-.news-item-content .details {
-  padding-top: 8px;
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--vp-c-text-2);
-}
-</style>
+<NewsItem href="https://workspace.gtif-austria.hub-otc.eox.at/git-clerk" target="_blank">
+  <template #title>Try the AI-supported Narrative Editor in the Workspace</template>
+  <template #details>Speed up creating narratives by using built-in AI capabilities within the GTIF-Austria Workspace to draft, structure, and insert special supported blocks.</template>
+</NewsItem>
 
 ## GTIF Capabilities 
 
@@ -139,5 +76,4 @@ GTIF Austria evolves in technnical cooperation with the following initiatives go
 * [Cerulean GTIF](https://cif.eox.at/) for Denmark, Canada, Northern Atlantic
 * [UKIF GTIF](https://gtif-ukif.github.io/gtif-ukif-client) for United Kingdom, Ireland, France
 
-<br />
 <br />
