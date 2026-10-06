@@ -775,8 +775,6 @@ const onImageError = (e) => {
   border: 1px solid var(--outline-variant, #e2e8f0) !important;
 }
 
-
-
 .pv-card:hover {
   opacity: 1 !important;
   transform: translateX(3px) !important;
