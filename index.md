@@ -18,6 +18,10 @@ hero:
       link: /explore
 ---
 
+<NewsItem href="https://workspace.gtif-austria.hub-otc.eox.at/git-clerk" target="_blank">
+  <template #title>Try the AI-supported Narrative Editor in the Workspace</template>
+  <template #details>Speed up creating narratives by using built-in AI capabilities within the GTIF-Austria Workspace to draft, structure, and insert special supported blocks.</template>
+</NewsItem>
 
 <NewsItem href="/providers">
   <template #title>New tool for exploring the GTIF-Austria service providers - see the organizations and identify their contributions here</template>
@@ -29,10 +33,6 @@ hero:
   <template #details>A reference guide for GTIF-Austria users. It also contains engineering insights about the platform architecture and its open-source software building blocks.</template>
 </NewsItem>
 
-<NewsItem href="https://workspace.gtif-austria.hub-otc.eox.at/git-clerk" target="_blank">
-  <template #title>Try the AI-supported Narrative Editor in the Workspace</template>
-  <template #details>Speed up creating narratives by using built-in AI capabilities within the GTIF-Austria Workspace to draft, structure, and insert special supported blocks.</template>
-</NewsItem>
 
 ## GTIF Capabilities 
 
