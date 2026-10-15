@@ -24,6 +24,11 @@
     "Description": "The AIT Center for Vision, Automation & Control is a leading research hub within the AIT Austrian Institute of Technology, Austria’s largest non-university research institution. With approximately 120 experts, the center focuses on enabling machines to 'see', 'think', and 'act' autonomously. Core research areas include high-performance vision systems; assistive and autonumous systems; and Complex Dynamical Systems (CDS).",
     "Logo": "https://github.com/GTIF-Austria/public-assets/blob/main/logos/ait.jpg?raw=true"
   },
+ "ALP.Lab": {
+    "Url": "https://www.alp-lab.at/",
+    "Description": "ALP.Lab GmbH is an Austrian service company specializing in testing, validation, and development solutions for automated driving technologies and smart mobility systems. Operating as an official Euro NCAP test laboratory, it provides comprehensive testing infrastructure across public roads and closed proving grounds for advanced driver assistance systems.",
+    "Logo": "https://github.com/GTIF-Austria/public-assets/blob/main/logos/alp-lab.jpg?raw=true"
+  },
   "Austria Tourism": {
     "Url": "https://b2b.austria.info/uk/",
     "Description": "Austria Tourism (Österreichwerbung) is the national tourism organization of Austria. Its primary mission is to promote Austria as a premier vacation destination and to ensure the country remains competitive in the global tourism market.",
@@ -118,6 +123,11 @@
     "Url": "https://www.sistema.at/applications/technology/",
     "Description": "SISTEMA GmbH, an Austrian environmental services company specializing in geospatial data analysis of the atmosphere, biomass, and climate.",
     "Logo": "https://github.com/eurodatacube/eodash-assets/blob/main/logos/sistema.png?raw=true"
+  },
+    "Spatial Services": {
+    "Url": "https://www.spatial-services.com/",
+    "Description": "Spatial Services GmbH is an Austrian geoinformatics spin-off from the University of Salzburg that specializes in tailored geographic information solutions and spatial data analysis. The company develops innovative geo-processes and software tools to support resource-efficient planning, environmental monitoring, and sustainable development.",
+    "Logo": "https://github.com/GTIF-Austria/public-assets/blob/main/logos/spatial_services.jpg?raw=true"
   },
   "TU Wien ESEA": {
     "Url": "https://www.tuwien.at/en/etit/esea",
