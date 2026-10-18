@@ -1,5 +1,21 @@
 ---
 layout: home
+head:
+  - - link
+    - rel: alternate
+      type: application/json
+      title: STAC Catalog
+      href: https://gtif-austria.github.io/public-catalog/GTIF-Austria/catalog.json
+  - - script
+    - type: application/ld+json
+    - |
+      {
+        "@context": "https://schema.org",
+        "@type": "DataCatalog",
+        "name": "GTIF Austria STAC Catalog",
+        "url": "https://gtif-austria.github.io/public-catalog/GTIF-Austria/catalog.json",
+        "description": "Green Transition Information Factory - Austria STAC Catalog."
+      }
 hero:
   text: Green Transition Information Factories - Austrian Capabilities
   tagline: Actionable information from Earth Observation for the green re-built and adaptations to climate change
@@ -69,11 +85,15 @@ Information about the suppliers behind each of the Capabilities is presented on 
 
 ### Links to International GTIFs
 
-GTIF Austria evolves in technnical cooperation with the following initiatives governed by the European Space Agency (ESA):
+GTIF Austria evolves in technical cooperation with the following initiatives governed by the European Space Agency (ESA):
 
-* [GTIF Demonstrator](https://gtif.esa.int) (ESA site)
+* [disabled GTIF Demonstrator](https://gtif.esa.int) (ESA site)
 * [Baltic GTIF](https://gtif-baltic.info) for Lithuania, Germany, Poland, Estonia, Latvia
 * [Cerulean GTIF](https://cif.eox.at/) for Denmark, Canada, Northern Atlantic
 * [UKIF GTIF](https://gtif-ukif.github.io/gtif-ukif-client) for United Kingdom, Ireland, France
+
+### Open Data & STAC Catalog
+
+All underlying datasets featured on the Dashboard are openly accessible via our [STAC (SpatioTemporal Asset Catalog)](/stac) endpoint: [`https://gtif-austria.github.io/public-catalog/GTIF-Austria/catalog.json`](https://gtif-austria.github.io/public-catalog/GTIF-Austria/catalog.json).
 
 <br />
