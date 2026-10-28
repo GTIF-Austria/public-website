@@ -3,7 +3,7 @@
   "version": "0.2.0",
   "type": "module",
   "devDependencies": {
-    "@eox/pages-theme-eox": "^1.3.0",
+    "@eox/pages-theme-eox": "^1.9.0",
     "vitepress": "^1.6.3"
   },
   "scripts": {
@@ -13,7 +13,10 @@
     "format": "npx prettier --write **/*.{js,css,vue}"
   },
   "dependencies": {
-    "@eodash/eodash": "https://pkg.pr.new/@eodash/eodash@ed97ffa",
-    "@eox/storytelling": "^1.13.0"
+    "@eodash/eodash": "5.10.0",
+    "@eox/storytelling": "^1.13.1"
+  },
+  "overrides": {
+    "@eodash/stac": "^0.2.0"
   }
 }
