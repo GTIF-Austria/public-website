@@ -36,7 +36,7 @@ hero:
 
 <NewsItem href="https://digitalcity.wien/event/digital-days-2026-2/" target="_blank">
   <template #title>Digital Days Vienna 2026: A full day of presentations and interactions related to GTIF-Austria</template>
-  <template #details>Meet GTIF-Providers in person and get updates on the programme. 18 Nov 2026, 9:00 - 16:00, Technisches Museum, Vienna: Forschungstrack - Digitaler Zwilling & DigiStreet demo area</template>
+  <template #details>Meet GTIF-Providers in person and get updates on the programme. <br> 18 Nov 2026, 9:00 - 16:00, Technisches Museum, Vienna: Forschungstrack - Digitaler Zwilling & DigiStreet demo area</template>
 </NewsItem>
 
 <NewsItem href="https://workspace.gtif-austria.hub-otc.eox.at/git-clerk" target="_blank">
