@@ -7,6 +7,7 @@ layout: page
     show-nav
     :markdown-url="params.file"
     show-hero-scroll-indicator
+    show-map-loading-indicator
     class="full-width"
     style="
       transform: translateY(calc(var(--vp-nav-height) - 2px));
