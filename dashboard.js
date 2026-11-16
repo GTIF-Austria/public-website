@@ -46,6 +46,14 @@ export default {
   id: "GTIF-Austria Dashboard",
   stacEndpoint:
     "https://gtif-austria.github.io/public-catalog/GTIF-Austria/catalog.json",
+  options: {
+    observationPointThemes: {
+      "Climate Change & Tourism": {
+        color: "#FF4444",
+        icon: "M13 13V5A3 3 0 0 0 7 5V13A5 5 0 1 0 13 13M11 5V11H9V5A1 1 0 0 1 11 5M15 9H17V11H15V9M15 5H20V7H15V5M15 13H20V15H15V13Z",
+      },
+    },
+  },
   brand: {
     noLayout: true,
     name: "GTIF-Austria Dashboard",
