@@ -169,7 +169,7 @@ export default {
                         { key: "eodash:narratives" },
                         {
                           key: "assets",
-                          filter: (asset) => !asset?.roles?.includes("story"),
+                          filter: (asset) => !asset?.roles?.some((role) => ["story", "thumbnail", "collection-mirror"].includes(role)),
                         },
                       ],
                     },
